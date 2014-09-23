@@ -1,8 +1,11 @@
+
 import java.awt.Point;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class GCodeGenerator {
 	
@@ -58,6 +61,34 @@ public class GCodeGenerator {
 		
 		return new Point(x, y);
 	}
+
+	/**
+	 * Given the coordinate on the screen where the device should click, gcode is generated 
+	 * 
+	 * @param clickPt The point on the device where the maker bot should click. 
+	 */
+	public List<String> createClickVector(Point clickPt){
+		//Calculate the new coordinate
+		clickPt = findCoord(clickPt);
+		List<String> vect = new ArrayList<String>();
+		//Write to vector
+			
+		//Set Up stuff
+		vect.add("M73 P2 \n" + "M103 \n" + "M73 P5 \n" + "M73 P0 \n");
+		vect.add("G21 \n" + "G90 \n");
+		vect.add("G162 X Y F2500 \n");
+		vect.add("G92 X" + ((int)origin.getX() + STYLUS_X_OFFSET) + " Y" + ((int)origin.getY() + STYLUS_Y_OFFSET) + " Z0 \n");
+		
+		//Moving
+		vect.add("G1 Z-" + (ZBOTTOM - 30 - width) + " F2300 \n"); //adjust to right height
+		vect.add("G1 X-" + ((int) clickPt.getX()) + " Y-" + ((int) clickPt.getY()) + " F2300 \n"); //Move to pt
+		vect.add("G1 Z-" + (ZBOTTOM - width - 1) + " \n"); //Click
+		vect.add("G1 Z-" + (ZBOTTOM - 30 - width) + " \n");
+		vect.add("G1 X0 Y0 Z0 \n"); //Return home
+		//vect.add("M72 P1"); //Done music 
+		
+		return vect;
+	}
 	
 	/**
 	 * Given the coordinate on the screen where the device should click, gcode is generated 
@@ -66,8 +97,7 @@ public class GCodeGenerator {
 	 */
 	public void createClickCode(Point clickPt){
 		//Calculate the new coordinate
-		clickPt = findCoord(clickPt);
-		
+		List<String> vect = createClickVector(clickPt);
 		//Write to file
 		try{
 			File newCode = new File(filePath + "gCode" + codeCount +".gcode");
@@ -76,19 +106,10 @@ public class GCodeGenerator {
 			FileWriter fw = new FileWriter(newCode.getAbsoluteFile());
 			BufferedWriter writer = new BufferedWriter(fw);
 			
-			//Set Up stuff
-			writer.write("M73 P2 \n" + "M103 \n" + "M73 P5 \n" + "M73 P0 \n");
-			writer.write("G21 \n" + "G90 \n");
-			writer.write("G162 X Y F2500 \n");
-			writer.write("G92 X" + ((int)origin.getX() + STYLUS_X_OFFSET) + " Y" + ((int)origin.getY() + STYLUS_Y_OFFSET) + " Z0 \n");
-			
-			//Moving
-			writer.write("G1 Z-" + (ZBOTTOM - 30 - width) + " F2300 \n"); //adjust to right height
-			writer.write("G1 X-" + ((int) clickPt.getX()) + " Y-" + ((int) clickPt.getY()) + " F2300 \n"); //Move to pt
-			writer.write("G1 Z-" + (ZBOTTOM - width - 1) + " \n"); //Click
-			writer.write("G1 Z-" + (ZBOTTOM - 30 - width) + " \n");
-			writer.write("G1 X0 Y0 Z0 \n"); //Return home
-			//writer.write("M72 P1"); //Done music 
+			for(String line: vect)
+			{
+				writer.write(line);
+			}
 			
 			writer.close();
 			
