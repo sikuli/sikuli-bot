@@ -1,0 +1,577 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Sanguino3G - ReplicatorG</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=64570"></script>
+
+        
+    <script type="text/javascript" src="http://static.wikidot.com/v--b3c30ebd788d/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://static.wikidot.com/v--b3c30ebd788d';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "replicat.org";
+        WIKIREQUEST.info.siteId = 64570;
+        WIKIREQUEST.info.categoryId = 355063;
+        WIKIREQUEST.info.themeId = 6841;
+        WIKIREQUEST.info.requestPageName = "sanguino3g";
+        OZONE.request.timestamp = 1352474826;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "sanguino3g";
+        WIKIREQUEST.info.pageId = 4223638;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://static.wikidot.com/v--b3c30ebd788d/common--javascript/WIKIDOT.combined.js"></script>
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+@import url(http://static.wikidot.com/v--b3c30ebd788d/common--modules/css/monetize/textlinkads/MonetizeTextLinkAdsModule.css);
+
+
+        
+        /* theme */
+                    @import url(http://static.wikidot.com/v--b3c30ebd788d/common--theme/base/css/style.css);
+                    @import url(http://static.wikidot.com/v--b3c30ebd788d/common--theme/flannel-nature/css/style.css);
+                    @import url(http://replicat.wdfiles.com/local--theme/flannel-custom/style.css);
+            </style>
+    
+    <link rel="shortcut icon" href="local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="local--favicon/favicon.gif"/>
+    
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-247838-13']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+</head>
+
+  <body id="html-body">
+  <a name="page-top"></a>
+  
+  <div id="container-wrap-wrap">
+    <div id="container-wrap">
+        <div id="container">
+            <div id="header">
+              <h1><a href="index.html"><span>ReplicatorG</span></a></h1>
+                                    <h2><span>lowering the barrier to 3D printing.</span></h2>
+                                
+                <!-- google_ad_section_start(weight=ignore) -->
+                
+                <div id="search-top-box">
+                    <form id="search-top-box-form" action="http://replicat.org/dummy">
+                        <input id="search-top-box-input" class="text empty" type="text" size="15" name="query" value="Search this site" onfocus="if(YAHOO.util.Dom.hasClass(this, 'empty')){YAHOO.util.Dom.removeClass(this,'empty'); this.value='';}"/><input class="button" type="submit" name="search" value="Search"/>
+                    </form>
+                </div>
+                
+                                    <div id="top-bar">
+                        
+
+
+                    </div>
+                                <div id="login-status"><a href="javascript:;" onclick="WIKIDOT.page.listeners.createAccount(event)" class="login-status-create-account">Create account</a> <span>or</span> <a href="javascript:;" onclick="WIKIDOT.page.listeners.loginClick(event)" class="login-status-sign-in">Sign in</a> </div>
+                <div id="header-extra-div-1"><span></span></div><div id="header-extra-div-2"><span></span></div><div id="header-extra-div-3"><span></span></div>
+            </div>
+            
+            <div id="content-wrap">
+                                    <div id="side-bar">
+                                                    
+
+                                                
+
+<p><strong>Main</strong></p><ul><li><a href="start">About</a></li><li><a href="download">Download</a></li><li><a href="installation">Installation</a></li><li><a href="usage">Usage</a></li><li><a href="drivers">Drivers</a></li></ul><p><strong>Reference</strong></p><ul><li><a href="primer">Primer</a></li><li><a href="gcodes">G Codes</a></li><li><a href="mcodes">M Codes</a></li><li><a href="generators">Generators</a></li></ul><p><strong>Development</strong></p><ul><li><a href="development-mailing-list">Development Mailing List</a></li><li><a href="building-from-source">Building ReplicatorG</a></li><li><a href="reporting-bugs">Reporting Bugs</a></li></ul><p><strong>Friends</strong></p><ul><li><a href="http://www.reprap.org">RepRap</a></li><li><a href="http://www.arduino.cc">Arduino</a></li><li><a href="http://www.processing.org">Processing</a></li><li><a href="http://www.nycresistor.com">NYC Resistor</a></li><li><a href="http://www.thingiverse.com">Thingiverse</a></li><li><a href="http://www.makerbot.com">MakerBot Industries</a></li></ul><p><strong>Coded by:</strong></p><ul><li><a href="http://www.zachhoeken.com">Zach Hoeken</a></li><li><a href="http://kintel.soup.io/">Marius Kintel</a></li><li><a href="http://www.thingiverse.com/phooky">Adam Mayer</a></li><li><a href="http://cibomahto.com">Matt Mets</a></li></ul>
+
+                                                    
+
+                                            </div>
+                                
+                <!-- google_ad_section_end -->
+                
+                <div id="main-content">
+                    <div id="action-area-top"></div>
+                    
+                    <!-- google_ad_section_start -->
+                                                                    <div id="page-title">
+                        Sanguino3G                        </div>
+                                                                    
+                    
+                                                
+
+                                            
+                        <div id="page-content">
+                            
+                                                        
+
+<table style="margin:0; padding:0">
+<tr>
+<td style="margin:0; padding:0">
+<div id="toc">
+<div id="toc-action-bar"><a href="javascript:;" onclick="WIKIDOT.page.listeners.foldToc(event)">Fold</a><a style="display: none" href="javascript:;" onclick="WIKIDOT.page.listeners.unfoldToc(event)">Unfold</a></div>
+<div class="title">Table of Contents</div>
+<div id="toc-list">
+<div style="margin-left: 1em;"><a href="sanguino3g#toc0">PLEASE NOTE:</a></div>
+<div style="margin-left: 2em;"><a href="sanguino3g#toc1">Sanguino3G Code</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc2">Packages</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc3">Reply Packages</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc4">Initialization</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc5">Motherboard Codes</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc6">Toolhead Codes</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc7">Magic Units</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc8">Micro steps</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc9">EEPROM</a></div>
+<div style="margin-left: 3em;"><a href="sanguino3g#toc10">Response Codes</a></div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<h1 id="toc0"><span>PLEASE NOTE:</span></h1>
+<p>The information on this page is not kept up to date, and will be removed in the future. Please see the <a href="http://docs.google.com/Doc?docid=0AcWKwJ2SAxDzZGd6amZyY2NfMmdtODRnZ2Ri&amp;hl=en">google doc</a> for a maintained version.</p>
+<h2 id="toc1"><span>Sanguino3G Code</span></h2>
+<p>To make it easier for the microcontroller, ReplicatorG translates the somewhat convoluted G-Code into a binary code. The binary code is then either wrapped into blocks and sent to the Makerbot via the serial connection (38400&#160;bps, 8n1), or written as raw binary data onto an SD Card to be picked up by the MCU.</p>
+<h3 id="toc2"><span>Packages</span></h3>
+<p>A package is used to wrap every command. It ensures that the command received is complete and not corrupted. The package contains the following bytes:</p>
+<ul>
+<li>0: start byte, always 0xD5</li>
+<li>1: length of the packet, not including the start byte, length byte or the CRC.</li>
+<li>2: the command byte - this is the first byte of the payload</li>
+<li>*: content of the block, all multibyte values are LSB first (Intel notation)</li>
+<li>n-1: the package ends with a single byte CRC checksum of the payload (Maxim 1-Wire CRC)</li>
+</ul>
+<p>(Tested and confirmed)</p>
+<p>Binary data on SD Cards is not wrapped in those packages, but written out directly to the card.</p>
+<h3 id="toc3"><span>Reply Packages</span></h3>
+<p>Reply packages are built just like the command packages. The first byte of the payload is the return code for the previous command (see <a href="sanguino3g#responsecode">Response Code</a> below). All further bytes depend on the command sent.</p>
+<h3 id="toc4"><span>Initialization</span></h3>
+<p>Initialization is done by flushing all bytes from the serial line. Then we send a version request and wait up to 8 seconds for the reply package. If no reply comes, we try to reset the motherboard by pulsing RTS low. If we do get the expected reply, we check the reply code and verify the version number of the MakeBot.</p>
+<h3 id="toc5"><span>Motherboard Codes</span></h3>
+<p>The motherboard understands the following codes. One letter represents one byte, so xxxx is a four-byte integer, vv is a two byte integer, etc. . 0x00 is the hexadecimal representation of a single byte.</p>
+<ul>
+<li>0: version
+<ul>
+<li>format: <tt>0x00</tt></li>
+<li>reply: <tt>r vv</tt> (r = response code, v = motherboard version number times 100 (v1.23 returns 123))</li>
+</ul>
+</li>
+<li>1: init
+<ul>
+<li>format: <tt>0x01</tt></li>
+<li>reply: response code only</li>
+</ul>
+</li>
+<li>2: get buffer size
+<ul>
+<li>reply: <tt>r ss</tt> (r = response code, s = size in bytes (256 for V1.6 firmware))</li>
+</ul>
+</li>
+<li>3: clear buffer
+<ul>
+<li>(not used)</li>
+</ul>
+</li>
+<li>4: get position
+<ul>
+<li>format: <tt>0x04</tt></li>
+<li>reply: <tt>r xxxx yyyy zzzz ?</tt> (position in magic steps, ?=unknown additional byte)</li>
+</ul>
+</li>
+<li>5: get range
+<ul>
+<li>reply: <tt>r ???? ???? ????</tt></li>
+</ul>
+</li>
+<li>6: set range</li>
+<li>7: abort: invalidate position, force reconciliation
+<ul>
+<li>format: <tt>0x07</tt> (no arguments)</li>
+</ul>
+</li>
+<li>8: pause: toggles the &quot;Pause&quot; state
+<ul>
+<li>format: <tt>0x08</tt> (no arguments!)</li>
+</ul>
+</li>
+<li>9: probe
+<ul>
+<li>format: <tt>0x09 (???)</tt></li>
+<li>reply: <tt>r c</tt> (r = reply code, c = probe code (?))</li>
+</ul>
+</li>
+<li>10: tool query
+<ul>
+<li>format: <tt>0x0a &#8230;</tt> (followed by command to be sent to tool board, see below, also see 136: tool command)</li>
+</ul>
+</li>
+<li>11: is finished: check if the previous command has been executed to the end
+<ul>
+<li>format: <tt>0x0b</tt></li>
+<li>reply: <tt>r f</tt> (f = 0 if not yet finished)</li>
+</ul>
+</li>
+<li>12: read eeprom
+<ul>
+<li>format: <tt>0x0c oo n</tt> (o is the offset inside the EEPROM, n is the number of bytes to read)</li>
+</ul>
+</li>
+<li>13: write eeprom
+<ul>
+<li>format: <tt>0x0d oo n &#8230;</tt> (o is the offset inside the EEPROM, n is the number of bytes to write)</li>
+</ul>
+</li>
+<li>14: capture to file (slow!)
+<ul>
+<li>format: <tt>0x0e &#8230; 0x00</tt> (&#8230; is a nul terminated filename in 8.3 format)</li>
+<li>reply: SD card response code</li>
+</ul>
+</li>
+<li>15: end capture
+<ul>
+<li>format: <tt>0x0f</tt></li>
+<li>reply: response code only</li>
+</ul>
+</li>
+<li>16: playback file
+<ul>
+<li>format: <tt>0x10 &#8230; 0x00</tt> (&#8230; is a null terminated filename in 8.3 format)</li>
+<li>reply: SD card response code</li>
+</ul>
+</li>
+<li>17: reset
+<ul>
+<li>format: <tt>0x11</tt></li>
+<li>reply: <tt>r</tt></li>
+<li>not sure what the difference is to &quot;init&quot; (or does this reset &quot;next filename&quot; below?)</li>
+</ul>
+</li>
+<li>18: next filename
+<ul>
+<li>format: <tt>0x12 r</tt> (r = 1 for first filename, 0 for next filename)</li>
+<li>reply: <tt>r s &#8230; 0</tt> SD card response code, if main response code is &quot;success&quot;, followed by nul-terminated text</li>
+<li>(I could not get this to work&#8230;)</li>
+</ul>
+</li>
+<li>129: queue point absolute
+<ul>
+<li>format: <tt>0x81 xxxx yyyy zzzz mmmm</tt> (x, y, z are the position in magic units, m are micro steps)</li>
+<li>corresponds to <tt>G1 X&#8230; Y&#8230; Z&#8230; F&#8230;</tt></li>
+</ul>
+</li>
+<li>130: set position registers
+<ul>
+<li>format: <tt>0x82 xxxx yyyy zzzz</tt></li>
+<li>corresponds to <tt>G92 X&#8230; Y&#8230; Z&#8230;</tt>, but is also sent after every <tt>0x81</tt> command</li>
+</ul>
+</li>
+<li>131: find axes minimum
+<ul>
+<li>format: <tt>0x83 f mmmm tt</tt> (f is flags (1=x, 2=y, 4=z), m ist micro steps, t is timeout in seconds)</li>
+<li>this is used to home the axes&#8230; .</li>
+</ul>
+</li>
+<li>132: find axes maximum</li>
+<li>133: delay
+<ul>
+<li>format: <tt>0x85 tttt</tt> (t is time in milliseconds)</li>
+</ul>
+</li>
+<li>134: change tool
+<ul>
+<li>format: <tt>0x86&#160;t</tt> (t is tool index)</li>
+</ul>
+</li>
+<li>135: wait for tool
+<ul>
+<li>format: <tt>0x87&#160;t dd cc</tt> (t is tool index, d is delay in milliseconds (100), c is timeout in seconds (120))</li>
+<li>example: (<tt>0x86&#160;0x00</tt>) <tt>0x87&#160;0x00&#160;0x64&#160;0x00&#160;0x78&#160;0x00</tt> = wait for extruder to reach the preset temperature</li>
+</ul>
+</li>
+<li>136: tool command
+<ul>
+<li>format: <tt>0x88&#160;t c p a</tt> (t is the toolhead, c is the tool command, p is the size of the argument list in bytes, and a are possible arguments, see also tool query, code 10)</li>
+</ul>
+</li>
+<li>137: enable axes
+<ul>
+<li>format: <tt>0x89&#160;b</tt> (b is a bit field of axes, 7 changes all axes, bit 7 indicates on or off)</li>
+</ul>
+</li>
+</ul>
+<h3 id="toc6"><span>Toolhead Codes</span></h3>
+<p>The tool heads understand these codes (details needed):</p>
+<ul>
+<li>0: version</li>
+<li>1: init</li>
+<li>2: get temperature
+<ul>
+<li>format: <tt>0x0a t 0x02</tt> (t is toolhead index starting at 0)</li>
+<li>reply: cc (c is temperature in Celsius)</li>
+<li>(verified OK)</li>
+</ul>
+</li>
+<li>3: set temperature
+<ul>
+<li>format: 0x88&#160;t 0x03 n cc (t is toolhead, n is number of bytes following (2), c is the temperature)</li>
+<li>corresponds to M104 Sccc</li>
+</ul>
+</li>
+<li>4: set motor 1 pwm
+<ul>
+<li>format 0x88&#160;t 0x04 n s (t is toolhead, n is number of bytes following, s is the speed)</li>
+<li>corresponds to M108 Snnn</li>
+</ul>
+</li>
+<li>5: set motor 2 pwm</li>
+<li>6: set motor 1 rpm
+<ul>
+<li>format 0x88&#160;t 0x06 n rrrr (t is toolhead, n is number of bytes following, r is rpm in microseconds per pulse)</li>
+</ul>
+</li>
+<li>7: set motor 2 rpm</li>
+<li>8: set motor 1 direction</li>
+<li>9: set motor 2 direction</li>
+<li>10: toggle motor 1
+<ul>
+<li>format: 0x88&#160;t 0x0a n f (t is toolhead, n is bytes following, bit 0 of f is motor on or off, bit 1 is the direction)</li>
+<li>corresponds to M101 and M103</li>
+</ul>
+</li>
+<li>11: toggle motor 2</li>
+<li>12: toggle fan
+<ul>
+<li>format: 0x88&#160;t 0x0c n f (t is toolhead, n is number of bytes following, f is flag: 1=on, 0=off)</li>
+<li>corresponds to M106 and M107</li>
+</ul>
+</li>
+<li>13: toggle valve
+<ul>
+<li>format: 0x88&#160;t 0x0d n f (t is toolhead, n is number of bytes following, f is flag: 1=on, 0=off)</li>
+</ul>
+</li>
+<li>14: set servo 1 pos</li>
+<li>15: set servo 2 pos</li>
+<li>16: filament status</li>
+<li>17: get motor 1 rpm
+<ul>
+<li>format: 0x10&#160;t 0x11</li>
+<li>return: rrrr (r is rpm in micros)</li>
+</ul>
+</li>
+<li>18: get motor 2 rpm
+<ul>
+<li>format: 0x10&#160;t 0x12</li>
+<li>return: rrrr (r is rpm in micros)</li>
+</ul>
+</li>
+<li>19: get motor 1 pwm
+<ul>
+<li>format: 0x10&#160;t 0x13</li>
+<li>return: p (p is pwm)</li>
+</ul>
+</li>
+<li>20: get motor 2 pwm
+<ul>
+<li>format: 0x10&#160;t 0x14</li>
+<li>return: p (p is pwm)</li>
+</ul>
+</li>
+<li>21: select tool</li>
+<li>22: is tool ready</li>
+</ul>
+<h3 id="toc7"><span>Magic Units</span></h3>
+<p>write this</p>
+<h3 id="toc8"><span>Micro steps</span></h3>
+<p>write this</p>
+<h3 id="toc9"><span>EEPROM</span></h3>
+<p>The EEPROM contains the following information:</p>
+<ul>
+<li>0-1: EEPROM data version</li>
+<li>2: axes inversion table</li>
+<li>32-47: machine name (ASCII, max. 16 chars)</li>
+</ul>
+<h3 id="toc10"><span><a name="responsecode"></a>Response Codes</span></h3>
+<p>Regular commands return these codes:</p>
+<ul>
+<li>0: generic error</li>
+<li>1: ok</li>
+<li>2: buffer overflow</li>
+<li>3: CRC mismatch (resulting code may be sent anyway! This is a bad idea because a CRC mismatch indicates a communication error, so the commend should not be executed, and the result is worthless)</li>
+<li>4: query overflow</li>
+<li>5: unsupported command</li>
+</ul>
+<p>The SD card can return the following status bytes:</p>
+<ul>
+<li>0: success</li>
+<li>1: no card</li>
+<li>2: init failed</li>
+<li>3: partition not supported</li>
+<li>4: file system not supported</li>
+<li>5: root dir not found</li>
+<li>6: card locked</li>
+<li>7: no such file</li>
+</ul>
+
+                        </div>
+                    
+                                                
+
+                                            
+                                            
+                        <!-- google_ad_section_end -->
+                    
+                        <!-- google_ad_section_start(weight=ignore) -->
+                    
+                        <div id="page-info-break"></div>
+                                                  <div id="page-options-container">
+                            
+                            </div>
+                                                                <div id="action-area" style="display: none;"></div>
+                </div>
+            </div>
+            
+            
+            
+            <div id="footer" style="display: block; visibility: visible;">
+                                    <div class="options" style="display: block; visibility: visible;">
+                        <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+                        &nbsp;|
+                        <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+                        &nbsp;|
+                        <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+                        &nbsp;|
+                        <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+                        &nbsp;|
+                        <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+                    </div>
+                    Powered by <a href="http://www.wikidot.com">Wikidot.com</a> 
+                            </div>
+                            <div id="license-area" class="license-area">
+                                            Unless otherwise stated, the content of this page is licensed under                                          
+<a href="http://www.gnu.org/copyleft/fdl.html" title="http://www.gnu.org/copyleft/fdl.html" rel="license">GNU 
+Free Documentation License</a>.
+                </div>
+                        
+                            
+
+                        
+            
+            <div id="extrac-div-1"><span></span></div><div id="extrac-div-2"><span></span></div><div id="extrac-div-3"><span></span></div>
+            
+                                                    
+                    </div>
+        
+    </div>
+    <!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+    <div id="extra-div-1"><span></span></div><div id="extra-div-2"><span></span></div><div id="extra-div-3"><span></span></div>
+    <div id="extra-div-4"><span></span></div><div id="extra-div-5"><span></span></div><div id="extra-div-6"><span></span></div>
+    </div>
+    
+        
+    <div id="page-options-bottom-tips" style="display: none;">
+        <div id="edit-button-hovertip">
+            Click here to edit contents of this page.        </div>
+    </div>
+    <div id="page-options-bottom-2-tips"  style="display: none;">
+        <div id="edit-sections-button-hovertip">
+            Click here to toggle editing of individual sections of the page (if possible).             Watch headings for an &quot;edit&quot; link when available.        </div>
+        <div id="edit-append-button-hovertip">
+            Append content without editing the whole page source.        </div>
+        <div id="history-button-hovertip">
+            Check out how this page has evolved in the past.        </div>
+        <div id="discuss-button-hovertip">
+            If you want to discuss contents of this page - this is the easiest way to do it.        </div>
+        <div id="files-button-hovertip">
+            View and manage file attachments for this page.        </div>
+        <div id="site-tools-button-hovertip">
+            A few useful tools to manage this Site.        </div>
+        <div id="backlinks-button-hovertip">
+            See pages that link to and include this page.        </div>
+        <div id="rename-move-button-hovertip">
+            Change the name (also URL address, possibly the category) of the page.        </div>
+        <div id="view-source-button-hovertip">
+            View wiki source for this page without editing.        </div>
+        <div id="parent-page-button-hovertip">  
+            View/set parent page (used for creating breadcrumbs and structured layout).        </div>
+                    <div id="abuse-report-button-hovertip">
+                Notify administrators if there is objectionable content in this page.            </div>
+            <div id="bug-report-button-hovertip">
+                Something does not work as expected? Find out what you can do.            </div>
+            <div id="wikidot-help-button-hovertip">
+                General Wikidot.com documentation and help section.            </div>
+            <div id="wikidot-tos-button-hovertip">
+                Wikidot.com Terms of Service - what you can, what you should not etc.            </div>
+            <div id="wikidot-privacy-button-hovertip">
+                Wikidot.com Privacy Policy.          
+            </div>
+            </div>
+    
+    <!-- google_ad_section_end -->
+    
+    <div id="account-notifications-dummy" style="display: none;"></div>
+    
+    <div id="dummy-ondomready-block" style="display: none;" ></div>
+    
+        <script type="text/javascript">
+    
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    
+    </script>
+    
+        <script type="text/javascript">
+    
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+    
+    
+          </body>
+
+</html>

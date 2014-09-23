@@ -1,0 +1,331 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Building ReplicatorG With Eclipse - ReplicatorG</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=64570"></script>
+
+        
+    <script type="text/javascript" src="http://static.wikidot.com/v--b3c30ebd788d/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://static.wikidot.com/v--b3c30ebd788d';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "replicat.org";
+        WIKIREQUEST.info.siteId = 64570;
+        WIKIREQUEST.info.categoryId = 355063;
+        WIKIREQUEST.info.themeId = 6841;
+        WIKIREQUEST.info.requestPageName = "building-replicatorg-with-eclipse";
+        OZONE.request.timestamp = 1352474827;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "building-replicatorg-with-eclipse";
+        WIKIREQUEST.info.pageId = 5346226;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://static.wikidot.com/v--b3c30ebd788d/common--javascript/WIKIDOT.combined.js"></script>
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+@import url(http://static.wikidot.com/v--b3c30ebd788d/common--modules/css/monetize/textlinkads/MonetizeTextLinkAdsModule.css);
+
+
+        
+        /* theme */
+                    @import url(http://static.wikidot.com/v--b3c30ebd788d/common--theme/base/css/style.css);
+                    @import url(http://static.wikidot.com/v--b3c30ebd788d/common--theme/flannel-nature/css/style.css);
+                    @import url(http://replicat.wdfiles.com/local--theme/flannel-custom/style.css);
+            </style>
+    
+    <link rel="shortcut icon" href="local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="local--favicon/favicon.gif"/>
+    
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-247838-13']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+</head>
+
+  <body id="html-body">
+  <a name="page-top"></a>
+  
+  <div id="container-wrap-wrap">
+    <div id="container-wrap">
+        <div id="container">
+            <div id="header">
+              <h1><a href="index.html"><span>ReplicatorG</span></a></h1>
+                                    <h2><span>lowering the barrier to 3D printing.</span></h2>
+                                
+                <!-- google_ad_section_start(weight=ignore) -->
+                
+                <div id="search-top-box">
+                    <form id="search-top-box-form" action="http://replicat.org/dummy">
+                        <input id="search-top-box-input" class="text empty" type="text" size="15" name="query" value="Search this site" onfocus="if(YAHOO.util.Dom.hasClass(this, 'empty')){YAHOO.util.Dom.removeClass(this,'empty'); this.value='';}"/><input class="button" type="submit" name="search" value="Search"/>
+                    </form>
+                </div>
+                
+                                    <div id="top-bar">
+                        
+
+
+                    </div>
+                                <div id="login-status"><a href="javascript:;" onclick="WIKIDOT.page.listeners.createAccount(event)" class="login-status-create-account">Create account</a> <span>or</span> <a href="javascript:;" onclick="WIKIDOT.page.listeners.loginClick(event)" class="login-status-sign-in">Sign in</a> </div>
+                <div id="header-extra-div-1"><span></span></div><div id="header-extra-div-2"><span></span></div><div id="header-extra-div-3"><span></span></div>
+            </div>
+            
+            <div id="content-wrap">
+                                    <div id="side-bar">
+                                                    
+
+                                                
+
+<p><strong>Main</strong></p><ul><li><a href="start">About</a></li><li><a href="download">Download</a></li><li><a href="installation">Installation</a></li><li><a href="usage">Usage</a></li><li><a href="drivers">Drivers</a></li></ul><p><strong>Reference</strong></p><ul><li><a href="primer">Primer</a></li><li><a href="gcodes">G Codes</a></li><li><a href="mcodes">M Codes</a></li><li><a href="generators">Generators</a></li></ul><p><strong>Development</strong></p><ul><li><a href="development-mailing-list">Development Mailing List</a></li><li><a href="building-from-source">Building ReplicatorG</a></li><li><a href="reporting-bugs">Reporting Bugs</a></li></ul><p><strong>Friends</strong></p><ul><li><a href="http://www.reprap.org">RepRap</a></li><li><a href="http://www.arduino.cc">Arduino</a></li><li><a href="http://www.processing.org">Processing</a></li><li><a href="http://www.nycresistor.com">NYC Resistor</a></li><li><a href="http://www.thingiverse.com">Thingiverse</a></li><li><a href="http://www.makerbot.com">MakerBot Industries</a></li></ul><p><strong>Coded by:</strong></p><ul><li><a href="http://www.zachhoeken.com">Zach Hoeken</a></li><li><a href="http://kintel.soup.io/">Marius Kintel</a></li><li><a href="http://www.thingiverse.com/phooky">Adam Mayer</a></li><li><a href="http://cibomahto.com">Matt Mets</a></li></ul>
+
+                                                    
+
+                                            </div>
+                                
+                <!-- google_ad_section_end -->
+                
+                <div id="main-content">
+                    <div id="action-area-top"></div>
+                    
+                    <!-- google_ad_section_start -->
+                                                                    <div id="page-title">
+                        Building ReplicatorG With Eclipse                        </div>
+                                                                    
+                    
+                                                
+
+                                            
+                        <div id="page-content">
+                            
+                                                        
+
+<h1 id="toc0"><span>Prerequisites</span></h1>
+<p>Make sure you've installed the sources and tools as described on our <a href="building-from-source">building from source</a> page, and that you've correctly installed the Eclipse IDE.</p>
+<h1 id="toc1"><span>Creating the project yourself</span></h1>
+<ul>
+<li>Start Eclipse and select &quot;File&gt;New&gt;Project&#8230;&quot; from the menu. Select &quot;Java Project from Ant Buildfile&quot; from the wizard.</li>
+<li>Select the &quot;build.xml&quot; file from the ReplicatorG directory as the Ant buildfile. Click &quot;finish&quot; to create the project.</li>
+<li>All the additional libraries needed for build were automatically added by Ant but they should be manually re included from within &quot;ReplicatorG/build&quot; directory:
+<ul>
+<li>Right click on the project name, and select &quot;Properties&quot;.</li>
+<li>In the Properties dialog, select &quot;Java Build Path&quot;.</li>
+<li>Select the Libraries tab.</li>
+<li>Press &quot;Add External JARs&#8230;&quot; (on the right side of the window).</li>
+<li>Add all the JARs from within &quot;build/shared/lib&quot; directory.</li>
+<li>Optional: Remove all the duplicated JARs.</li>
+</ul>
+</li>
+</ul>
+<p>If you intend to run ReplicatorG from Eclipse, you'll need to set up a launch configuration. When you do, be sure to add the native libraries for your platform to the VM arguments.</p>
+<ul>
+<li>Still in the properties dialog, select &quot;Run/Debug Settings&quot;. Click &quot;New&quot;, then &quot;Java Application&quot;. This will bring up the edit configuration dialog.</li>
+<li>On the main tab, for a main class select &quot;Base - replicatorg.app&quot;</li>
+<li>On the Arguments tab, add the library paths to the VM arguments.
+<ul>
+<li>For a Linux x86 build (tested on Linux Ubuntu 11.10), add: -ea -Djava.library.path=${workspace_loc:ReplicatorG}/build/linux/dist/lib-i686 -Dreplicatorg.app-resources=${workspace_loc:ReplicatorG}/build/shared/lib -Djava.library.path=/usr/lib/jni</li>
+<li>For a Linux x86-64 build (tested on Linux Ubuntu 11.10), add: -ea -Djava.library.path=${workspace_loc:ReplicatorG}/build/linux/dist/lib-x86_64 -Dreplicatorg.app-resources=${workspace_loc:ReplicatorG}/build/shared/lib -Djava.library.path=/usr/lib/jni</li>
+<li>For a Windows build, add: -ea -Djava.library.path=${workspace_loc:ReplicatorG}/build/windows/dist -Dreplicatorg.app-resources=${workspace_loc:ReplicatorG}/build/shared/lib</li>
+<li>For an OS X build, add: -d32 -ea -Xmx1G -Djava.library.path=${workspace_loc:ReplicatorG}/build/macosx/dist -Dreplicatorg.app-resources=${workspace_loc:ReplicatorG}/build/shared/lib</li>
+</ul>
+</li>
+</ul>
+<h3 id="toc2"><span>Linux Ubuntu 11.10</span></h3>
+<p>Casainho is developing on Linux Ubuntu 11.10 and he founds:</p>
+<ul>
+<li><em>-Djava.library.path=/usr/lib/jni</em> must be added to VM arguments on the Arguments tab of Run Configurations so Eclipse can use RXTX library.</li>
+<li>on the first time, is needed to run <em>ant run</em> command on ReplicatorG source folder, using the terminal.</li>
+<li>While Casainho ReplicatorG sources are on <em>/home/cas/replicatorg</em>, the Eclipse runs ReplicatorG as if is on <em>Eclipse workspace</em> and so not finding some folders needed. For Casainho, his workspace is on <em>/home/cas/workspace_eclipse_java</em>/ to where he had to link the folders <em>examples</em>, <em>machines</em> and <em>scripts</em> from the ReplicatorG sources folder using the following commands on terminal:
+<ul>
+<li>ln -s /home/cas/replicatorg/examples/ /home/cas/workspace_eclipse_java/ReplicatorG/</li>
+<li>ln -s /home/cas/replicatorg/machines/ /home/cas/workspace_eclipse_java/ReplicatorG/</li>
+<li>ln -s /home/cas/replicatorg/scripts/ /home/cas/workspace_eclipse_java/ReplicatorG/</li>
+</ul>
+</li>
+</ul>
+<h3 id="toc3"><span>Windows 7&#160;64-bit builds</span></h3>
+<p>Mark Klunder recommends the following to get Eclipse builds working properly on 64-bit Windows 7 platforms:</p>
+<div class="code">
+<pre>
+<code>To get ReplicatorG to execute on my Windows7 64bit edition under jdk 1.6.0_26 i had to do the following
+
+Removed : JRE_Lib 
+Added :   JRE System Library [jdk1.6.0_26]
+
+Changed files to 64 bit versions 
+-------------------------------------------------------------------------------------------
+j3dcore-ogl.dll      :  Sourced from http://java3d.java.net/binary-builds.html
+rxtxSerial.dll        :  Sourced from http://www.cloudhopper.com/opensource/rxtx/
+RXTXcomm.jar     :  Sourced from http://www.cloudhopper.com/opensource/rxtx/</code>
+</pre></div>
+<p>We'll try to get these libraries into the source tree soon.</p>
+<h1 id="toc4"><span>Suppressing generics warnings</span></h1>
+<p>You may see many warnings when you first try to build your project of the form &quot;XXX is a raw type&quot;. This is because much of the editor component was written in the late 90's, before generics were available in Java. These warnings can be safely ignored. You can suppress the warnings by changing the Java Compiler warning options in the project settings as shown below:</p>
+<a href="http://www.flickr.com/photos/makerbot/5237836037/"><img src="http://farm6.static.flickr.com/5126/5237836037_7bb230916a_o.png" alt="flickr:5237836037" class="image" /></a>
+                        </div>
+                    
+                                                
+
+                                            
+                                            
+                        <!-- google_ad_section_end -->
+                    
+                        <!-- google_ad_section_start(weight=ignore) -->
+                    
+                        <div id="page-info-break"></div>
+                                                  <div id="page-options-container">
+                            
+                            </div>
+                                                                <div id="action-area" style="display: none;"></div>
+                </div>
+            </div>
+            
+            
+            
+            <div id="footer" style="display: block; visibility: visible;">
+                                    <div class="options" style="display: block; visibility: visible;">
+                        <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+                        &nbsp;|
+                        <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+                        &nbsp;|
+                        <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+                        &nbsp;|
+                        <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+                        &nbsp;|
+                        <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+                    </div>
+                    Powered by <a href="http://www.wikidot.com">Wikidot.com</a> 
+                            </div>
+                            <div id="license-area" class="license-area">
+                                            Unless otherwise stated, the content of this page is licensed under                                          
+<a href="http://www.gnu.org/copyleft/fdl.html" title="http://www.gnu.org/copyleft/fdl.html" rel="license">GNU 
+Free Documentation License</a>.
+                </div>
+                        
+                            
+
+                        
+            
+            <div id="extrac-div-1"><span></span></div><div id="extrac-div-2"><span></span></div><div id="extrac-div-3"><span></span></div>
+            
+                                                    
+                    </div>
+        
+    </div>
+    <!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+    <div id="extra-div-1"><span></span></div><div id="extra-div-2"><span></span></div><div id="extra-div-3"><span></span></div>
+    <div id="extra-div-4"><span></span></div><div id="extra-div-5"><span></span></div><div id="extra-div-6"><span></span></div>
+    </div>
+    
+        
+    <div id="page-options-bottom-tips" style="display: none;">
+        <div id="edit-button-hovertip">
+            Click here to edit contents of this page.        </div>
+    </div>
+    <div id="page-options-bottom-2-tips"  style="display: none;">
+        <div id="edit-sections-button-hovertip">
+            Click here to toggle editing of individual sections of the page (if possible).             Watch headings for an &quot;edit&quot; link when available.        </div>
+        <div id="edit-append-button-hovertip">
+            Append content without editing the whole page source.        </div>
+        <div id="history-button-hovertip">
+            Check out how this page has evolved in the past.        </div>
+        <div id="discuss-button-hovertip">
+            If you want to discuss contents of this page - this is the easiest way to do it.        </div>
+        <div id="files-button-hovertip">
+            View and manage file attachments for this page.        </div>
+        <div id="site-tools-button-hovertip">
+            A few useful tools to manage this Site.        </div>
+        <div id="backlinks-button-hovertip">
+            See pages that link to and include this page.        </div>
+        <div id="rename-move-button-hovertip">
+            Change the name (also URL address, possibly the category) of the page.        </div>
+        <div id="view-source-button-hovertip">
+            View wiki source for this page without editing.        </div>
+        <div id="parent-page-button-hovertip">  
+            View/set parent page (used for creating breadcrumbs and structured layout).        </div>
+                    <div id="abuse-report-button-hovertip">
+                Notify administrators if there is objectionable content in this page.            </div>
+            <div id="bug-report-button-hovertip">
+                Something does not work as expected? Find out what you can do.            </div>
+            <div id="wikidot-help-button-hovertip">
+                General Wikidot.com documentation and help section.            </div>
+            <div id="wikidot-tos-button-hovertip">
+                Wikidot.com Terms of Service - what you can, what you should not etc.            </div>
+            <div id="wikidot-privacy-button-hovertip">
+                Wikidot.com Privacy Policy.          
+            </div>
+            </div>
+    
+    <!-- google_ad_section_end -->
+    
+    <div id="account-notifications-dummy" style="display: none;"></div>
+    
+    <div id="dummy-ondomready-block" style="display: none;" ></div>
+    
+        <script type="text/javascript">
+    
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    
+    </script>
+    
+        <script type="text/javascript">
+    
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+    
+    
+          </body>
+
+</html>

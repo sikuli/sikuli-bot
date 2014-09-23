@@ -1,4 +1,4 @@
-package org.sikuli.bot
+package org.sikuli.bot;
 
 class HelloBot {
 

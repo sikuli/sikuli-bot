@@ -1,0 +1,407 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>M Codes - ReplicatorG</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=64570"></script>
+
+        
+    <script type="text/javascript" src="http://static.wikidot.com/v--b3c30ebd788d/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://static.wikidot.com/v--b3c30ebd788d';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "replicat.org";
+        WIKIREQUEST.info.siteId = 64570;
+        WIKIREQUEST.info.categoryId = 355063;
+        WIKIREQUEST.info.themeId = 6841;
+        WIKIREQUEST.info.requestPageName = "mcodes";
+        OZONE.request.timestamp = 1352474824;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "mcodes";
+        WIKIREQUEST.info.pageId = 2017001;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://static.wikidot.com/v--b3c30ebd788d/common--javascript/WIKIDOT.combined.js"></script>
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+@import url(http://static.wikidot.com/v--b3c30ebd788d/common--modules/css/monetize/textlinkads/MonetizeTextLinkAdsModule.css);
+
+
+        
+        /* theme */
+                    @import url(http://static.wikidot.com/v--b3c30ebd788d/common--theme/base/css/style.css);
+                    @import url(http://static.wikidot.com/v--b3c30ebd788d/common--theme/flannel-nature/css/style.css);
+                    @import url(http://replicat.wdfiles.com/local--theme/flannel-custom/style.css);
+            </style>
+    
+    <link rel="shortcut icon" href="local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="local--favicon/favicon.gif"/>
+    
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-247838-13']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+</head>
+
+  <body id="html-body">
+  <a name="page-top"></a>
+  
+  <div id="container-wrap-wrap">
+    <div id="container-wrap">
+        <div id="container">
+            <div id="header">
+              <h1><a href="index.html"><span>ReplicatorG</span></a></h1>
+                                    <h2><span>lowering the barrier to 3D printing.</span></h2>
+                                
+                <!-- google_ad_section_start(weight=ignore) -->
+                
+                <div id="search-top-box">
+                    <form id="search-top-box-form" action="http://replicat.org/dummy">
+                        <input id="search-top-box-input" class="text empty" type="text" size="15" name="query" value="Search this site" onfocus="if(YAHOO.util.Dom.hasClass(this, 'empty')){YAHOO.util.Dom.removeClass(this,'empty'); this.value='';}"/><input class="button" type="submit" name="search" value="Search"/>
+                    </form>
+                </div>
+                
+                                    <div id="top-bar">
+                        
+
+
+                    </div>
+                                <div id="login-status"><a href="javascript:;" onclick="WIKIDOT.page.listeners.createAccount(event)" class="login-status-create-account">Create account</a> <span>or</span> <a href="javascript:;" onclick="WIKIDOT.page.listeners.loginClick(event)" class="login-status-sign-in">Sign in</a> </div>
+                <div id="header-extra-div-1"><span></span></div><div id="header-extra-div-2"><span></span></div><div id="header-extra-div-3"><span></span></div>
+            </div>
+            
+            <div id="content-wrap">
+                                    <div id="side-bar">
+                                                    
+
+                                                
+
+<p><strong>Main</strong></p><ul><li><a href="start">About</a></li><li><a href="download">Download</a></li><li><a href="installation">Installation</a></li><li><a href="usage">Usage</a></li><li><a href="drivers">Drivers</a></li></ul><p><strong>Reference</strong></p><ul><li><a href="primer">Primer</a></li><li><a href="gcodes">G Codes</a></li><li><a href="mcodes">M Codes</a></li><li><a href="generators">Generators</a></li></ul><p><strong>Development</strong></p><ul><li><a href="development-mailing-list">Development Mailing List</a></li><li><a href="building-from-source">Building ReplicatorG</a></li><li><a href="reporting-bugs">Reporting Bugs</a></li></ul><p><strong>Friends</strong></p><ul><li><a href="http://www.reprap.org">RepRap</a></li><li><a href="http://www.arduino.cc">Arduino</a></li><li><a href="http://www.processing.org">Processing</a></li><li><a href="http://www.nycresistor.com">NYC Resistor</a></li><li><a href="http://www.thingiverse.com">Thingiverse</a></li><li><a href="http://www.makerbot.com">MakerBot Industries</a></li></ul><p><strong>Coded by:</strong></p><ul><li><a href="http://www.zachhoeken.com">Zach Hoeken</a></li><li><a href="http://kintel.soup.io/">Marius Kintel</a></li><li><a href="http://www.thingiverse.com/phooky">Adam Mayer</a></li><li><a href="http://cibomahto.com">Matt Mets</a></li></ul>
+
+                                                    
+
+                                            </div>
+                                
+                <!-- google_ad_section_end -->
+                
+                <div id="main-content">
+                    <div id="action-area-top"></div>
+                    
+                    <!-- google_ad_section_start -->
+                                                                    <div id="page-title">
+                        M Codes                        </div>
+                                                                    
+                    
+                                                
+
+                                            
+                        <div id="page-content">
+                            
+                                                        
+
+<p>This page presents a summary of M codes used by ReplicatorG. M codes are very protean and flexible; many are RepRap or MakerBot specific.</p>
+<p>The following extra M-Codes were defined for RepRap:</p>
+<ul>
+<li>M101 Extruder on, fwd</li>
+<li>M102 Extruder on, reverse</li>
+<li>M103 Extruder off</li>
+<li>M104 Snn set temperature in degrees Celsius</li>
+<li>M105 get extruder temperature</li>
+<li>M106 turn fan on</li>
+<li>M107 turn fan off</li>
+<li>M108 Set Extruder's Max Speed (Rnnn = RPM, Pnnn = PWM)</li>
+<li>M109 Snnn set build platform temperature in degrees Celsuis</li>
+<li>M110 Snnn set chamber temperature in degrees Celsius</li>
+<li>M120, M121, M122 Snnn set the PID gain for the temperature regulator (not currently supported by ReplicatorG)</li>
+<li>M123, M124 Snnn set iMax and iMin windup guard for the PID controller (not currently supported by ReplicatorG)</li>
+<li>M128 get position</li>
+<li>M129 get range (not currently supported by ReplicatorG)</li>
+<li>M130 set range (not currently supported by ReplicatorG)</li>
+<li>M200 reset driver</li>
+<li>M202 clear buffer (not currently supported by ReplicatorG)</li>
+<li>M300 Snnn set servo 1 position</li>
+<li>M301 Snnn set servo 2 position</li>
+</ul>
+<h2 id="toc0"><span>Other M codes understood by ReplicatorG</span></h2>
+<ul>
+<li>M0 Unconditional Halt (not supported on SD)</li>
+<li>M1 Optional Halt (not supported on SD)</li>
+<li>M2 End program</li>
+<li>M3 spindle on, CW</li>
+<li>M4 spindle on, CCW</li>
+<li>M5 spindle off</li>
+<li>M6 Tool change. This code waits until the toolhead is ready before proceeding. This is often used to wait for a toolhead to reach the its set temperature before beginning a print. ReplicatorG also supports giving a timeout with M6 P&lt;secs&gt;.</li>
+<li>M7 coolant A on (flood coolant)</li>
+<li>M8 cooland B on (mist coolant)</li>
+<li>M9 all coolants off</li>
+<li>M10 close clamp</li>
+<li>M11 open clamp</li>
+<li>M13 spindle CW and coolant A on</li>
+<li>M14 spindle CCW and coolant A on</li>
+<li>M17 enable motor(s)</li>
+<li>M18 disable motor(s)</li>
+<li>M21 open collet</li>
+<li>M22 close collet</li>
+<li>M30 program rewind</li>
+<li>M40-M46 change gear ratio (0 - 6)</li>
+<li>M50 read spindle speed</li>
+<li>M70 Display message on machine, with optional timeout specified by P-code in seconds
+<ul>
+<li>Ex.: <tt>M70 P10 (Display this text for ten seconds)</tt></li>
+</ul>
+</li>
+<li>M71 Pause activity and display message, resuming build on button push. Optional timeout specified by P-code in seconds. If timeout is specified and no button is pushed, machine should shut down or reset.
+<ul>
+<li>Ex.: <tt>M71 (Please insert motor into assembly and push a button.)</tt></li>
+<li>Ex.: <tt>M71 P20 (Machine will reset in twenty seconds!)</tt></li>
+</ul>
+</li>
+<li>M72 Play a song or tone defined by the machine, by a P-code specifying a song type. Default songs are Error Sound (P0), a Ta-da sound (P1), and a warning sound (P2). all other sounds are user or machine specific, with P2 the default for unknown sounds.
+<ul>
+<li>Ex <tt>M72 P1 (Machine will play a 'TaDa' song!)</tt></li>
+</ul>
+</li>
+<li>M73 Manually set build percentage. Valid P values are 0 to 100, values over 100 are rounded down to 100
+<ul>
+<li>Ex <tt>M73 P10 (Set build percent to 10% )</tt></li>
+</ul>
+</li>
+<li>M126 valve open (acceleration on for subsequent instructions in the <a href="http://wiki.makerbot.com/jetty-firmware">Jetty Firmware</a>)</li>
+<li>M127 valve close (acceleration off for subsequent instructions in the <a href="http://wiki.makerbot.com/jetty-firmware">Jetty Firmware</a>)</li>
+<li>M310 (filepath) logging (see below)</li>
+<li>M311 stop logging (see below)</li>
+<li>M312 (message) log message (see below)</li>
+<li>M320 acceleration on for subsequent instructions (Replicator/MightyBoard)</li>
+<li>M321 acceleration off for subsequent instructions (Replicator/MightyBoard)</li>
+</ul>
+<p><a name="logging"></a></p>
+<h3 id="toc1"><span>Logging in ReplicatorG</span></h3>
+<p>ReplicatorG 26 and later will feature basic logging functionality through M codes. You can experiment with this feature by checking out the &quot;temperature_log&quot; branch in the git repository.</p>
+<dl>
+<dt>M310 (FILE_PATH)</dt>
+<dd>Start logging to the file specified by &quot;FILE_PATH&quot;. The parenthesis are necessary!</dd>
+<dt>M311</dt>
+<dd>Stop logging</dd>
+<dt>M312 (MESSAGE)</dt>
+<dd>Log the message text to the logging file.</dd>
+</dl>
+<p>Status messages will be logged to the file once logging is turned on; this means you can log temperature data. NB: you must turn on &quot;monitor temperature&quot; in your preferences to monitor the toolheads! The status of all configured toolheads will be dumped to the log file at one second intervals.</p>
+<p>Example:</p>
+<div class="code">
+<pre>
+<code>(This will log 5 seconds of temperature data on all configured tools)
+M310 (test.log)
+M312 (--Start logging--)
+M104 S225 T0 (set extruder temperature)
+G04 P5000
+M104 S0 T0
+M312 (--End logging--)
+M311</code>
+</pre></div>
+<h2 id="toc2"><span>Other examples</span></h2>
+<p>(run toolhead 0 for 5 seconds)<br />
+G21 (set units to mm)<br />
+G90 (set positioning to absolute)<br />
+M108 T0 R1.98 (set extruder speed)<br />
+M103 T0 (Make sure extruder is off)<br />
+M104 S225 T0 (set extruder temperature)<br />
+M6 T0 (wait for toolhead parts, nozzle, HBP, etc., to reach temperature)<br />
+M101 T0 (Extruder on, forward)<br />
+G04 P5000 (Wait t/1000 seconds)<br />
+M103 T0 (Extruder off)<br />
+M104 S0 T0 (set extruder temperature)</p>
+<p>(run toolhead 1 for 6 seconds)<br />
+M108 T1 R1.98 (set extruder speed)<br />
+M103 T1 (Make sure extruder is off)<br />
+M104 S225 T1 (set extruder temperature)<br />
+M6 T1 (wait for toolhead parts, nozzle, HBP, etc., to reach temperature)<br />
+M101 T1 (Extruder on, forward)<br />
+G04 P6000 (Wait t/1000 seconds)<br />
+M103 T1 (Extruder off)<br />
+M104 S0 T1 (set extruder temperature)</p>
+<h2 id="toc3"><span>M codes used by the Jetty Firmware but not understood by ReplicatorG</span></h2>
+<p>The following M codes are used by the <a href="http://wiki.makerbot.com/jetty-firmware">Jetty Firmware</a> and are documented at <a href="http://wiki.makerbot.com/jetty-firmware#toc56">Jetty M Codes</a>. With the exception of M126, M127 and M200, they are not presently supported by the standard ReplicatorG releases. Versions of ReplicatorG which understand these M codes are available as part of <a href="http://www.thingiverse.com/thing:17855">Thing 17855</a> at <a href="http://www.thingiverse.com/">Thingiverse</a>. A number of these M codes are also supported by the Marlin firmware.</p>
+<ul>
+<li>M126 use acceleration for subsequent instructions</li>
+<li>M127 disable acceleration for subsequent instructions</li>
+<li>M201 set maximum rates of acceleration/deceleration</li>
+<li>M203 set maximum feed rates</li>
+<li>M204 set default rates of acceleration</li>
+<li>M205 set minimum feed rates and planner speed</li>
+<li>M206 set extruded noodle diameter, extruder maximum reverse feed rate, extruder deprime, slowdown limit, and direction of extruder feed</li>
+<li>M207 set JKN Advance parameters K and K2</li>
+<li>M208 set extruder steps per millimeter</li>
+<li>M209 turn acceleration planner on or off; enable or disable override of gcode temperature settings</li>
+<li>M215 set steps per millimeter for each axis</li>
+<li>M216 set maximum speed changes for each axis</li>
+<li>M200 reset (to pick up changes)</li>
+</ul>
+
+                        </div>
+                    
+                                                
+
+                                            
+                                            
+                        <!-- google_ad_section_end -->
+                    
+                        <!-- google_ad_section_start(weight=ignore) -->
+                    
+                        <div id="page-info-break"></div>
+                                                  <div id="page-options-container">
+                            
+                            </div>
+                                                                <div id="action-area" style="display: none;"></div>
+                </div>
+            </div>
+            
+            
+            
+            <div id="footer" style="display: block; visibility: visible;">
+                                    <div class="options" style="display: block; visibility: visible;">
+                        <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+                        &nbsp;|
+                        <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+                        &nbsp;|
+                        <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+                        &nbsp;|
+                        <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+                        &nbsp;|
+                        <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+                    </div>
+                    Powered by <a href="http://www.wikidot.com">Wikidot.com</a> 
+                            </div>
+                            <div id="license-area" class="license-area">
+                                            Unless otherwise stated, the content of this page is licensed under                                          
+<a href="http://www.gnu.org/copyleft/fdl.html" title="http://www.gnu.org/copyleft/fdl.html" rel="license">GNU 
+Free Documentation License</a>.
+                </div>
+                        
+                            
+
+                        
+            
+            <div id="extrac-div-1"><span></span></div><div id="extrac-div-2"><span></span></div><div id="extrac-div-3"><span></span></div>
+            
+                                                    
+                    </div>
+        
+    </div>
+    <!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+    <div id="extra-div-1"><span></span></div><div id="extra-div-2"><span></span></div><div id="extra-div-3"><span></span></div>
+    <div id="extra-div-4"><span></span></div><div id="extra-div-5"><span></span></div><div id="extra-div-6"><span></span></div>
+    </div>
+    
+        
+    <div id="page-options-bottom-tips" style="display: none;">
+        <div id="edit-button-hovertip">
+            Click here to edit contents of this page.        </div>
+    </div>
+    <div id="page-options-bottom-2-tips"  style="display: none;">
+        <div id="edit-sections-button-hovertip">
+            Click here to toggle editing of individual sections of the page (if possible).             Watch headings for an &quot;edit&quot; link when available.        </div>
+        <div id="edit-append-button-hovertip">
+            Append content without editing the whole page source.        </div>
+        <div id="history-button-hovertip">
+            Check out how this page has evolved in the past.        </div>
+        <div id="discuss-button-hovertip">
+            If you want to discuss contents of this page - this is the easiest way to do it.        </div>
+        <div id="files-button-hovertip">
+            View and manage file attachments for this page.        </div>
+        <div id="site-tools-button-hovertip">
+            A few useful tools to manage this Site.        </div>
+        <div id="backlinks-button-hovertip">
+            See pages that link to and include this page.        </div>
+        <div id="rename-move-button-hovertip">
+            Change the name (also URL address, possibly the category) of the page.        </div>
+        <div id="view-source-button-hovertip">
+            View wiki source for this page without editing.        </div>
+        <div id="parent-page-button-hovertip">  
+            View/set parent page (used for creating breadcrumbs and structured layout).        </div>
+                    <div id="abuse-report-button-hovertip">
+                Notify administrators if there is objectionable content in this page.            </div>
+            <div id="bug-report-button-hovertip">
+                Something does not work as expected? Find out what you can do.            </div>
+            <div id="wikidot-help-button-hovertip">
+                General Wikidot.com documentation and help section.            </div>
+            <div id="wikidot-tos-button-hovertip">
+                Wikidot.com Terms of Service - what you can, what you should not etc.            </div>
+            <div id="wikidot-privacy-button-hovertip">
+                Wikidot.com Privacy Policy.          
+            </div>
+            </div>
+    
+    <!-- google_ad_section_end -->
+    
+    <div id="account-notifications-dummy" style="display: none;"></div>
+    
+    <div id="dummy-ondomready-block" style="display: none;" ></div>
+    
+        <script type="text/javascript">
+    
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    
+    </script>
+    
+        <script type="text/javascript">
+    
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+    
+    
+          </body>
+
+</html>

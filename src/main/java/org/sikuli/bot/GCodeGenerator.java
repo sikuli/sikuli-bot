@@ -1,11 +1,11 @@
+package org.sikuli.bot;
 
 import java.awt.Point;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Vector;
 
 public class GCodeGenerator {
 	
@@ -67,25 +67,34 @@ public class GCodeGenerator {
 	 * 
 	 * @param clickPt The point on the device where the maker bot should click. 
 	 */
-	public List<String> createClickVector(Point clickPt){
+	public Vector<String> createClickVector(Point clickPt){
 		//Calculate the new coordinate
 		clickPt = findCoord(clickPt);
-		List<String> vect = new ArrayList<String>();
+		Vector<String> vect = new Vector<String>();
 		//Write to vector
 			
 		//Set Up stuff
-		vect.add("M73 P2 \n" + "M103 \n" + "M73 P5 \n" + "M73 P0 \n");
-		vect.add("G21 \n" + "G90 \n");
-		vect.add("G162 X Y F2500 \n");
-		vect.add("G92 X" + ((int)origin.getX() + STYLUS_X_OFFSET) + " Y" + ((int)origin.getY() + STYLUS_Y_OFFSET) + " Z0 \n");
+		vect.add("M73 P2");
+        vect.add("M103");
+        vect.add("M73 P5");
+        vect.add("M73 P0");
+		vect.add("G21");
+        vect.add("G90");
+		vect.add("G162 X Y F2500");
+
+		vect.add("G92 X" + ((int)origin.getX() + STYLUS_X_OFFSET) + " Y" +
+                ((int)origin.getY() + STYLUS_Y_OFFSET) + " Z0");
 		
 		//Moving
-		vect.add("G1 Z-" + (ZBOTTOM - 30 - width) + " F2300 \n"); //adjust to right height
-		vect.add("G1 X-" + ((int) clickPt.getX()) + " Y-" + ((int) clickPt.getY()) + " F2300 \n"); //Move to pt
-		vect.add("G1 Z-" + (ZBOTTOM - width - 1) + " \n"); //Click
-		vect.add("G1 Z-" + (ZBOTTOM - 30 - width) + " \n");
-		vect.add("G1 X0 Y0 Z0 \n"); //Return home
-		//vect.add("M72 P1"); //Done music 
+		vect.add("G1 Z-" + (ZBOTTOM - 30 - width) + " F2300"); //adjust to right height
+
+		vect.add("G1 X-" + ((int) clickPt.getX()) + " Y-" +
+                ((int) clickPt.getY()) + " F2300"); //Move to pt
+
+		vect.add("G1 Z-" + (ZBOTTOM - width - 1)); //Click
+		vect.add("G1 Z-" + (ZBOTTOM - 30 - width));
+		vect.add("G1 X0 Y0 Z0"); //Return home
+		// vect.add("M72 P1"); //Done music 
 		
 		return vect;
 	}
@@ -97,7 +106,7 @@ public class GCodeGenerator {
 	 */
 	public void createClickCode(Point clickPt){
 		//Calculate the new coordinate
-		List<String> vect = createClickVector(clickPt);
+		Vector<String> vect = createClickVector(clickPt);
 		//Write to file
 		try{
 			File newCode = new File(filePath + "gCode" + codeCount +".gcode");
@@ -123,7 +132,7 @@ public class GCodeGenerator {
 	
 	public static void main(String[] args){
 		//Piece of paper is 205x268 mm
-		GCodeGenerator test = new GCodeGenerator(new Point(60,60), 140, 80, 3, "/Users/Ian Char/Documents/School/DLA/makerBotRobot/test/");
+		GCodeGenerator test = new GCodeGenerator(new Point(60,60), 140, 80, 3, ".");
 		test.createClickCode(new Point (114,375));
 		test.createClickCode(new Point(0,0));
 		test.createClickCode(new Point(571, 150));

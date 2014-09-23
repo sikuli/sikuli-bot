@@ -1,0 +1,374 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>How to Use ReplicatorG - ReplicatorG</title>
+    
+    	<script type="text/javascript" src="http://www.wikidot.com/default__flow/login__CustomDomainScript?site_id=64570"></script>
+
+        
+    <script type="text/javascript" src="http://static.wikidot.com/v--b3c30ebd788d/common--javascript/init.combined.js"></script>
+    <script  type="text/javascript">
+        var URL_HOST = 'www.wikidot.com';
+        var URL_DOMAIN = 'wikidot.com';
+        var USE_SSL =  true ;
+        var URL_STATIC = 'http://static.wikidot.com/v--b3c30ebd788d';
+        // global request information
+        
+        var WIKIREQUEST = {};
+        WIKIREQUEST.info = {};
+        
+        WIKIREQUEST.info.domain = "replicat.org";
+        WIKIREQUEST.info.siteId = 64570;
+        WIKIREQUEST.info.categoryId = 355063;
+        WIKIREQUEST.info.themeId = 6841;
+        WIKIREQUEST.info.requestPageName = "usage";
+        OZONE.request.timestamp = 1352474823;
+        OZONE.request.date = new Date();
+        WIKIREQUEST.info.lang = 'en';
+                WIKIREQUEST.info.pageUnixName = "usage";
+        WIKIREQUEST.info.pageId = 2016994;
+                        WIKIREQUEST.info.lang = "en";
+        OZONE.lang = "en";
+    </script>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+            
+    
+    
+    <meta http-equiv="content-language" content="en"/>
+    <script type="text/javascript" src="http://static.wikidot.com/v--b3c30ebd788d/common--javascript/WIKIDOT.combined.js"></script>
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+@import url(http://static.wikidot.com/v--b3c30ebd788d/common--modules/css/monetize/textlinkads/MonetizeTextLinkAdsModule.css);
+
+
+        
+        /* theme */
+                    @import url(http://static.wikidot.com/v--b3c30ebd788d/common--theme/base/css/style.css);
+                    @import url(http://static.wikidot.com/v--b3c30ebd788d/common--theme/flannel-nature/css/style.css);
+                    @import url(http://replicat.wdfiles.com/local--theme/flannel-custom/style.css);
+            </style>
+    
+    <link rel="shortcut icon" href="local--favicon/favicon.gif"/>
+    <link rel="icon" type="image/gif" href="local--favicon/favicon.gif"/>
+    
+            <link rel="alternate" type="application/wiki" title="Edit this page" href="javascript:WIKIDOT.page.listeners.editClick()"/>
+    
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18234656-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        _gaq.push(['old._setAccount', 'UA-68540-5']);
+        _gaq.push(['old._setDomainName', 'none']);
+        _gaq.push(['old._setAllowLinker', true]);
+        _gaq.push(['old._trackPageview']);
+
+                _gaq.push(['userTracker._setAccount', 'UA-247838-13']);
+        _gaq.push(['userTracker._trackPageview']);
+            </script>
+    
+    <script type="text/javascript">
+        window.google_analytics_uacct = 'UA-18234656-1';
+        window.google_analytics_domain_name = 'none';
+    </script>
+</head>
+
+  <body id="html-body">
+  <a name="page-top"></a>
+  
+  <div id="container-wrap-wrap">
+    <div id="container-wrap">
+        <div id="container">
+            <div id="header">
+              <h1><a href="index.html"><span>ReplicatorG</span></a></h1>
+                                    <h2><span>lowering the barrier to 3D printing.</span></h2>
+                                
+                <!-- google_ad_section_start(weight=ignore) -->
+                
+                <div id="search-top-box">
+                    <form id="search-top-box-form" action="http://replicat.org/dummy">
+                        <input id="search-top-box-input" class="text empty" type="text" size="15" name="query" value="Search this site" onfocus="if(YAHOO.util.Dom.hasClass(this, 'empty')){YAHOO.util.Dom.removeClass(this,'empty'); this.value='';}"/><input class="button" type="submit" name="search" value="Search"/>
+                    </form>
+                </div>
+                
+                                    <div id="top-bar">
+                        
+
+
+                    </div>
+                                <div id="login-status"><a href="javascript:;" onclick="WIKIDOT.page.listeners.createAccount(event)" class="login-status-create-account">Create account</a> <span>or</span> <a href="javascript:;" onclick="WIKIDOT.page.listeners.loginClick(event)" class="login-status-sign-in">Sign in</a> </div>
+                <div id="header-extra-div-1"><span></span></div><div id="header-extra-div-2"><span></span></div><div id="header-extra-div-3"><span></span></div>
+            </div>
+            
+            <div id="content-wrap">
+                                    <div id="side-bar">
+                                                    
+
+                                                
+
+<p><strong>Main</strong></p><ul><li><a href="start">About</a></li><li><a href="download">Download</a></li><li><a href="installation">Installation</a></li><li><a href="usage">Usage</a></li><li><a href="drivers">Drivers</a></li></ul><p><strong>Reference</strong></p><ul><li><a href="primer">Primer</a></li><li><a href="gcodes">G Codes</a></li><li><a href="mcodes">M Codes</a></li><li><a href="generators">Generators</a></li></ul><p><strong>Development</strong></p><ul><li><a href="development-mailing-list">Development Mailing List</a></li><li><a href="building-from-source">Building ReplicatorG</a></li><li><a href="reporting-bugs">Reporting Bugs</a></li></ul><p><strong>Friends</strong></p><ul><li><a href="http://www.reprap.org">RepRap</a></li><li><a href="http://www.arduino.cc">Arduino</a></li><li><a href="http://www.processing.org">Processing</a></li><li><a href="http://www.nycresistor.com">NYC Resistor</a></li><li><a href="http://www.thingiverse.com">Thingiverse</a></li><li><a href="http://www.makerbot.com">MakerBot Industries</a></li></ul><p><strong>Coded by:</strong></p><ul><li><a href="http://www.zachhoeken.com">Zach Hoeken</a></li><li><a href="http://kintel.soup.io/">Marius Kintel</a></li><li><a href="http://www.thingiverse.com/phooky">Adam Mayer</a></li><li><a href="http://cibomahto.com">Matt Mets</a></li></ul>
+
+                                                    
+
+                                            </div>
+                                
+                <!-- google_ad_section_end -->
+                
+                <div id="main-content">
+                    <div id="action-area-top"></div>
+                    
+                    <!-- google_ad_section_start -->
+                                                                    <div id="page-title">
+                        How to Use ReplicatorG                        </div>
+                                                                    
+                    
+                                                
+
+                                            
+                        <div id="page-content">
+                            
+                                                        
+
+<h2 id="toc0"><span>Start ReplicatorG</span></h2>
+<p>First, start ReplicatorG!</p>
+<h2 id="toc1"><span>Configuring your machine</span></h2>
+<p>If it's your first time using ReplicatorG, you'll need to configure it to connect to your machine. Select &quot;Machine Type (Driver) from the Machine menu.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/05/select-driver.jpg" alt="select-driver.jpg" class="image" /></div>
+<p>Select the entry that best describes your machine. If you have an unusual machine or one that does not appear in this menu, you may need to add a profile for it yourself. For detailed configuration information, please see the <a href="machine-configuration">machines.xml configuration page</a>. (If you've created a working profile for a common machine type, drop us a line and let us know so we can include it in the next release!)</p>
+<p>If (like most users) you're connecting to your machine via a serial port (like a USB-TTL cable), you'll need to tell ReplicatorG which serial port to use. Select the appropriate entry from the &quot;Machine&gt;Serial Port&quot; submenu:</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/05/select-port.jpg" alt="select-port.jpg" class="image" /></div>
+<p>The naming of serial ports varies from platform to platform, so it may not be obvious which one to select at first. On most platforms, the phrase &quot;usb&quot; will appear somewhere in the port name; on Windows, you'll probably want to select the highest-numbered COM port.</p>
+<p>Once you've selected a port, click the connect button at the right of the top bar and ReplicatorG will attempt to connect to the machine. If it's having trouble, it will time out after about fifteen seconds or so. If it's successful, the status bar will turn green, and the window will look like this:</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/05/connected.jpg" alt="connected.jpg" class="image" /></div>
+<p>Take a look at the row of buttons at the top of the ReplicatorG window. The arrow pointing to the bean-shaped object is the Build button, which will start a print via USB.</p>
+<p>The Build from SD button, just to the right, will pull up a list of the files currently on the SD card in your machine and will allow you to print one of them.</p>
+<p>The third button in the row is Build to File, which will convert your Gcode file to an s3g file and save it.</p>
+<p>The fourth button, with the arrow pointing to a piece of paper with the letter &quot;g,&quot; opens up the Generate Gcode window.</p>
+<p>The Pause and Stop buttons near the center of the row will pause and stop a print, respectively.</p>
+<p>The button with the four arrows will open up ReplicatorG's Control Panel, from which you can control different parts of your machine.</p>
+<p>You can restart your machine by clicking the next button, the one with two arrows forming a circle. And the final two buttons allow you to connect to and disconnect from your machine.</p>
+<h2 id="toc2"><span>Printing from an STL file</span></h2>
+<p>With ReplicatorG 0017 and later, you can load STL files and print them from within ReplicatorG. To start, find an STL file! There are plenty on Thingiverse which are appropriate for printing.</p>
+<h3 id="toc3"><span>Open the STL file</span></h3>
+<p>You can open the STL file by selecting the &quot;File&gt;Open&#8230;&quot; menu option.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/05/open-file.jpg" alt="open-file.jpg" class="image" /></div>
+<p>This will bring up an open file dialog. Select the STL file that you want to print.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/05/open-file-dialog.jpg" alt="open-file-dialog.jpg" class="image" /></div>
+<p>Now you'll see the 3D model you've selected:</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/model-view.jpg" alt="model-view.jpg" class="image" /></div>
+<p>The model will be enclosed in a box representing the size of your machine's build envelope. You can use this to judge how large your final print will be, and whether your machine is capable of printing it at its current size.</p>
+<p>You can use the mouse to rotate and zoom your view by following the instructions on the toolbar at the right:</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/rotate-model-view.jpg" alt="rotate-model-view.jpg" class="image" /></div>
+<p>Keep in mind that you're only changing your viewpoint&#8212; you're not actually changing the orientation or size of your object!</p>
+<p><a name="manipulating"></a></p>
+<h3 id="toc4"><span>Manipulating the object</span></h3>
+<p>(Note: if you're happy with how the object looks right now, you can skip ahead to &quot;Generate the toolpath&quot;.)</p>
+<p><strong>Warning:</strong> ReplicatorG by default saves modified objects on top of original files! If it's important to you to keep an original, unmodified copy of your model around, consider making a copy of the file before you begin.</p>
+<p>This pair of pliers is nice, but we'd like to make it a little larger. First, we'll click on the &quot;XY&quot; view button in the View panel to see what the object looks like from above:</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/XY-view.jpg" alt="XY-view.jpg" class="image" /></div>
+<p>Next, we need to scale the object up a bit. Click on the &quot;Scale&quot; button at the bottom of the toolbar. Then click and drag in the preview window until the object is the desired size. You can also scale by a multiplier &#8212; .5 will halve the object's size and 2 will double it &#8212; or use the &quot;Fill Build Space!&quot; button to make your object as large as your machine can print it.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/scale-object.jpg" alt="scale-object.jpg" class="image" /></div>
+<p>As placed, this object is too big to fit on the build platform, so we'll want to rotate it. First, we'll click on the &quot;Rotate&quot; button in the toolbar. Then check the &quot;Rotate around Z&quot; checkbox, as shown.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/rotate-around-Z.jpg" alt="rotate-around-Z.jpg" class="image" /></div>
+<p>This will ensure that the object only rotates around the Z axis. Now you can click and drag your mouse in the preview window to rotate the object to the correct angle.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/rotated.jpg" alt="rotated.jpg" class="image" /></div>
+<p>You can also uncheck &quot;Rotate around Z&quot; and rotate your object along all three axes, or use the individual axis buttons to rotate your object in 90° increments. For example, if the bottom of your object isn't the flattest side, you can rotate it to rest on a different side. Get it pretty close to the orientation you want and then use the &quot;Lay flat&quot; button to make sure it's oriented correctly in relation to the platform.</p>
+<p>Sometimes an object won't be centered on the build platform, or it can rest above or below the platform. In the image below, the pliers are at an angle and the handles are poking through the platform.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/05/uncentered.jpg" alt="uncentered.jpg" class="image" /></div>
+<p>Go to the &quot;Move&quot; view, and click the &quot;Center&quot; and &quot;Put on platform&quot; buttons. This will move the object to the center of the platform and place it so its bottom rests on the build platform. You can also use the axis buttons move your object around in the build envelope in specified increments.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/05/centered.jpg" alt="centered.jpg" class="image" /></div>
+<p>You can save your object by selecting &quot;Save&quot; from the menu before you generate the toolpath, but if you forget, clicking the &quot;Generate toolpath&quot; button will prompt you to save.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/05/save-model.jpg" alt="save-model.jpg" class="image" /></div>
+<h3 id="toc5"><span>Generate the toolpath</span></h3>
+<p>Next, you'll need to generate the toolpath &#8212; the directions that explain how to the extruder needs to move to print the object. These instructions are currently written in a format called <em>gcode</em>. The model must be converted to gcode before it can be printed.</p>
+<p>We usually use a tool called <em>Skeinforge</em> to convert a model into gcode. Skeinforge is very powerful, but can be difficult to use. To make it a bit easier, we've integrated Skeinforge into ReplicatorG. All you need to do to generate a toolpath is click the Generate GCode button at the lower right.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/generate-gcode-window.jpg" alt="generate-gcode-window.jpg" class="image" /></div>
+<p>Choose a profile from the dropdown menu. Try to find the one that best describes your machine and material. Then you can either click the &quot;Generate Gcode&quot; button right away, or you can change some settings first, like whether you need a raft or support, or if you want to use Print-O-Matic to override some of the settings in your chosen profile. The Print-O-Matic settings are described in more detail further down on this page.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/generating-gcode.jpg" alt="generating-gcode.jpg" class="image" /></div>
+<p>Keep in mind that Skeinforge is a very computationally intensive program, and generating a toolpath may take several minutes for complex models. If it's taking too long, you can always hit the &quot;Cancel&quot; button to abort.</p>
+<p>When toolpath generation is complete, the dialog will disappear and you'll see a &quot;gcode&quot; tab appear above your model:</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/gcode-tab.jpg" alt="gcode-tab.jpg" class="image" /></div>
+<p>You're ready to start printing! If you like, you can click on the gcode tab to review the generated gcode before you print:</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/review-gcode.jpg" alt="review-gcode.jpg" class="image" /></div>
+<h3 id="toc6"><span>Print!</span></h3>
+<p>Now you can click the Build button, and let your machine make you something! Check your machine's documentation before you start to print &#8212; sometimes you'll have to do some calibration to get your machine set up.</p>
+<h2 id="toc7"><span>Printing from a GCode file</span></h2>
+<p>If you already have a gcode file you want to print, just load it directly and click Build to print.</p>
+<h2 id="toc8"><span>Editing profiles</span></h2>
+<p>Some users will want to tune Skeinforge for their specific machines, or create new profiles. You can do this by selecting &quot;Edit Slicing profiles&quot; from the Gcode menu.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/04/editprofiles.jpg" alt="editprofiles.jpg" class="image" /></div>
+<p>This will bring up the Edit Profiles dialog. You can create edit existing profiles by selecting them and hitting the &quot;Edit&#8230;&quot; button. You can also use the &quot;Duplicate&#8230;&quot; button to create a copy of an existing profile so you can edit it without losing the original.</p>
+<p>When you edit a Skeinforge profile, you'll see the Skeinforge configuration interface appear. Change whatever you like &#8212; the settings are stored in different directories for different profiles, and won't interfere with any other Skeinforge profile you may already have on your computer. If you come up with a good profile for any machine, let us know so we can include it in the next release!</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/04/skeinforge-multiply.jpg" alt="skeinforge-multiply.jpg" class="image" /></div>
+<p>(Windows users: sometimes the Skeinforge process fails to report that you've finished editing a profile and, after closing the Skeinforge profile editor, ReplicatorG becomes unresponsive. If you find that this happens sometimes, there is a setting in File-&gt;Preferences (Ctrl+,) called &quot;Skeinforge timeout.&quot; It specifies the number of seconds to wait before assuming that Skeinforge has failed to return. Setting it to 60, for example, will cause ReplicatorG to unblock after one minute. Any changes made in Skeinforge can still be saved and will be used when generating gcode if they have been saved.)</p>
+<h2 id="toc9"><span>Profile Location</span></h2>
+<p>Skeinforge profiles are located in various locations; the ones shipped with ReplicatorG can be found in:<br />
+<strong><em>replicatorg/skein_engines/skeinforge-[VER]/skeinforge_application/profiles</em></strong><br />
+<strong><em>replicatorg/skein_engines/skeinforge-[VER]/skeinforge_application/profiles-experimental</em></strong></p>
+<p>Duplicated profiles are saved to your home directory and will show up between different versions of ReplicatorG. This location varies depending on your operating system:<br />
+<strong><em>Windows - /Users/[USERNAME]/.replicatorg/sf_[VER]_profiles</em>/</strong></p>
+<h2 id="toc10"><span>About Print-O-Matic</span></h2>
+<p>Print-O-Matic is a streamlined interface for Skeinforge, integrated into recent versions of ReplicatorG. It offers a limited number of configuration options and relies on the currently selected profile for the others.</p>
+<h3 id="toc11"><span>Using Print-O-Matic</span></h3>
+<p>Using Print-O-Matic is straightforward. First, select an appropriate Skeinforge profile. If you don't see an appropriate profile for your 3D printer, check the GCode-&gt;GCode Generator menu. If you're using a MakerBot Replicator, this should be set to 'Skeinforge (50).' On older printers it should be set to 'Skeinforge (35).' This page deals with the settings for Skeinforge 47 and 50, but the Skeinforge 35 settings are substantially similar.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/generategcode0037.jpg" alt="generategcode0037.jpg" class="image" /></div>
+<p>The Print-O-Matic settings are the ones in the lower half of the &quot;Generate Gcode&quot; window. You can deactivate Print-O-Matic and hide these settings by unchecking &quot;Use Print-O-Matic,&quot; but using Print-O-Matic is the simplest way for you to customize your print settings.</p>
+<h3 id="toc12"><span>The Print-O-Matic Menu</span></h3>
+<p>The Print-O-Matic menu consists of four tabs: Settings, Plastic, Extruder and Defaults. The default extruder settings should be correct. You'll want to check that you have the right plastic type and diameter entered, although those defaults will likely be correct, too.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/pomsettings0037.jpg" alt="pomsettings0037.jpg" class="image" /></div>
+<p>The Settings tab is where you can experiment with different configurations.</p>
+<p><strong>Object Infill</strong> dictates the density of your print. 100% infill will make your object completely solid, while 0% will make it hollow.</p>
+<p><strong>Layer Height</strong> is exactly what it sounds like: it determines how flat each layer of your print is going to be. The default is around .3&#160;mm, but you can experiment with layer heights as low as .1&#160;mm if you're looking for finer detail.</p>
+<p><strong>Number of shells</strong> refers to the outer structure &#8212; the thickness of the perimeter your bot prints on each layer before it starts on the infill. Every model is going to start with one shell, so the number of shells you set in Print-O-Matic is actually the number you're adding. If you enter 2 here, your object will be printed with three concentric perimeters. These build in towards the center, so they make your object more sturdy without changing the modelled surface.</p>
+<p><strong>Feedrate</strong> is the speed at which your bot moves while extruding plastic, and &quot;Travel Feedrate&quot; is how fast it moves when it's not. Again, the defaults are a good place to start, but you might want to experiment with setting them a little bit lower.</p>
+<p>Set infill and shells based on how strong you need your printed object to be. Then you can start experimenting with layer height and feedrate. These two settings will have huge effects on print quality, so you'll want to try out different combinations. Experiment as much as you like: you can always revert the settings to the original base profile by going to the Defaults tab &#8212; you can choose between accelerated and regular defaults.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/06/pomdefaults0037.jpg" alt="pomdefaults0037.jpg" class="image" /></div>
+<p>When you’re done entering your settings, click “Generate Gcode” and the automagic will begin.</p>
+<h3 id="toc13"><span>What Did Print-O-Matic Do?</span></h3>
+<p>Print-O-Matic works by overriding a number of settings in Skeinforge. Some of these settings, like layer thickness and infill solidity, come straight from the values you entered into Print-O-Matic. Others, like flow rate, are computed using the numbers you entered. Print-O-Matic's basic approach is based on the idea that the axes should move at the same speed as the plastic leaves the nozzle. This method yields the highest rate of successful prints and works wonders on challenging geometry like bridging large gaps. Print-O-Matic doesn't allow for as much fine-tuning as entering settings into Skeinforge directly, but it's much simpler and easier to use.</p>
+<p>To see the Skeinforge values that Print-O-Matic created according to your settings, you can turn on logging in ReplicatorG Preferences.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/03/6-again-prefswitharrows.jpg" alt="6-again-prefswitharrows.jpg" class="image" /></div>
+<p>Check the box to “Log to File” and type in a preferred name in the field to the right. This file is stored in the same folder as your ReplicatorG application. Set the level of logging detail to INFO. Now when you generate gCode, the debugging section located at the bottom of the ReplicatorG application window will show the values generated by Print-O-Matic.</p>
+<div class="image-container aligncenter"><img src="http://makerbot-blog.s3.amazonaws.com/wp-content/uploads/2012/03/7-overrides.jpg" alt="7-overrides.jpg" class="image" /></div>
+<p>For more information on Print-O-Matic, take a look at this helper doc by Nick Starno on Thingiverse.com! <a href="http://www.thingiverse.com/thing:7308">http://www.thingiverse.com/thing:7308</a></p>
+<h2 id="toc14"><span>Conclusion</span></h2>
+<p>Thats about it! You should probably read up on the <a href="generators">various generators</a> that will create GCode for you. If you want to write your own GCode or generator, you should start with the <a href="primer">GCode Primer</a>.</p>
+
+                        </div>
+                    
+                                                
+
+                                            
+                                            
+                        <!-- google_ad_section_end -->
+                    
+                        <!-- google_ad_section_start(weight=ignore) -->
+                    
+                        <div id="page-info-break"></div>
+                                                  <div id="page-options-container">
+                            
+                            </div>
+                                                                <div id="action-area" style="display: none;"></div>
+                </div>
+            </div>
+            
+            
+            
+            <div id="footer" style="display: block; visibility: visible;">
+                                    <div class="options" style="display: block; visibility: visible;">
+                        <a href="http://www.wikidot.com/doc" id="wikidot-help-button">Help</a>
+                        &nbsp;|
+                        <a href="http://www.wikidot.com/legal:terms-of-service" id="wikidot-tos-button">Terms of Service</a>
+                        &nbsp;|
+                        <a href="http://www.wikidot.com/legal:privacy-policy" id="wikidot-privacy-button">Privacy</a>
+                        &nbsp;|
+                        <a href="javascript:;" id="bug-report-button" onclick="WIKIDOT.page.listeners.pageBugReport(event)">Report a bug</a>
+                        &nbsp;|
+                        <a href="javascript:;" id="abuse-report-button" onclick="WIKIDOT.page.listeners.flagPageObjectionable(event)">Flag as objectionable</a>
+                    </div>
+                    Powered by <a href="http://www.wikidot.com">Wikidot.com</a> 
+                            </div>
+                            <div id="license-area" class="license-area">
+                                            Unless otherwise stated, the content of this page is licensed under                                          
+<a href="http://www.gnu.org/copyleft/fdl.html" title="http://www.gnu.org/copyleft/fdl.html" rel="license">GNU 
+Free Documentation License</a>.
+                </div>
+                        
+                            
+
+                        
+            
+            <div id="extrac-div-1"><span></span></div><div id="extrac-div-2"><span></span></div><div id="extrac-div-3"><span></span></div>
+            
+                                                    
+                    </div>
+        
+    </div>
+    <!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+    <div id="extra-div-1"><span></span></div><div id="extra-div-2"><span></span></div><div id="extra-div-3"><span></span></div>
+    <div id="extra-div-4"><span></span></div><div id="extra-div-5"><span></span></div><div id="extra-div-6"><span></span></div>
+    </div>
+    
+        
+    <div id="page-options-bottom-tips" style="display: none;">
+        <div id="edit-button-hovertip">
+            Click here to edit contents of this page.        </div>
+    </div>
+    <div id="page-options-bottom-2-tips"  style="display: none;">
+        <div id="edit-sections-button-hovertip">
+            Click here to toggle editing of individual sections of the page (if possible).             Watch headings for an &quot;edit&quot; link when available.        </div>
+        <div id="edit-append-button-hovertip">
+            Append content without editing the whole page source.        </div>
+        <div id="history-button-hovertip">
+            Check out how this page has evolved in the past.        </div>
+        <div id="discuss-button-hovertip">
+            If you want to discuss contents of this page - this is the easiest way to do it.        </div>
+        <div id="files-button-hovertip">
+            View and manage file attachments for this page.        </div>
+        <div id="site-tools-button-hovertip">
+            A few useful tools to manage this Site.        </div>
+        <div id="backlinks-button-hovertip">
+            See pages that link to and include this page.        </div>
+        <div id="rename-move-button-hovertip">
+            Change the name (also URL address, possibly the category) of the page.        </div>
+        <div id="view-source-button-hovertip">
+            View wiki source for this page without editing.        </div>
+        <div id="parent-page-button-hovertip">  
+            View/set parent page (used for creating breadcrumbs and structured layout).        </div>
+                    <div id="abuse-report-button-hovertip">
+                Notify administrators if there is objectionable content in this page.            </div>
+            <div id="bug-report-button-hovertip">
+                Something does not work as expected? Find out what you can do.            </div>
+            <div id="wikidot-help-button-hovertip">
+                General Wikidot.com documentation and help section.            </div>
+            <div id="wikidot-tos-button-hovertip">
+                Wikidot.com Terms of Service - what you can, what you should not etc.            </div>
+            <div id="wikidot-privacy-button-hovertip">
+                Wikidot.com Privacy Policy.          
+            </div>
+            </div>
+    
+    <!-- google_ad_section_end -->
+    
+    <div id="account-notifications-dummy" style="display: none;"></div>
+    
+    <div id="dummy-ondomready-block" style="display: none;" ></div>
+    
+        <script type="text/javascript">
+    
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    
+    </script>
+    
+        <script type="text/javascript">
+    
+    _qoptions={
+        qacct:"p-edL3gsnUjJzw-"
+    };
+    (function() {
+        var qc = document.createElement('script'); qc.type = 'text/javascript'; qc.async = true;
+        qc.src = ('https:' == document.location.protocol ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(qc, s);
+    })();
+    
+    </script>
+    <noscript>
+        <img src="http://pixel.quantserve.com/pixel/p-edL3gsnUjJzw-.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+    
+    
+          </body>
+
+</html>
