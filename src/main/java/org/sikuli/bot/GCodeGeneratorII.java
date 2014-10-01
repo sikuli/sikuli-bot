@@ -104,11 +104,12 @@ public class GCodeGeneratorII {
 		
 		return vect;
 	}
-	
-	public Vector<String> createClickVector(Point clickPt, Point prevPt){
+		
+	public Vector<String> createClickVector(Point clickPt, Point prevPt, Point dragPt){
 		//Calculate the new coordinate
 		clickPt = findCoord(clickPt);
 		prevPt = findCoord(prevPt);
+		dragPt = findCoord(dragPt);
 		Vector<String> vect = new Vector<String>();
 		//Write to vector
 			
@@ -139,6 +140,14 @@ public class GCodeGeneratorII {
 
 //		vect.add("G1 Z-" + (ZBOTTOM - width - 1)); //Click
 		vect.add("G1 Z-22");//\" + (ZBOTTOM - 30 - width));
+		
+		if (dragPt != null){
+			vect.add("G1 X-" + ((int) dragPt.getX()) + " Y-" +
+	                ((int) dragPt.getY()) + " F3000"); //Move to pt
+		}
+		
+		
+		
 		vect.add("G1 Z0");
 //		vect.add("G1 X0 Y0 Z0"); //Return home
 		// vect.add("M72 P1"); //Done music 

@@ -24,6 +24,8 @@ public class AndroidMouse implements Mouse {
 		generator = new GCodeGeneratorII(origin, screenWidthmm, screenHeightmm, 3, ".");
 
 	}
+	
+	
 
 	@Override
 	public void drag(ScreenLocation screenLoc) {
@@ -45,8 +47,32 @@ public class AndroidMouse implements Mouse {
 		log.info("execute click at ({},{})", x, y);
 		
 		Point clickPoint = new Point(x,y);		
-		Vector<String> code = generator.createClickVector(clickPoint, prevPoint);
+		Vector<String> code = generator.createClickVector(clickPoint, prevPoint, null);
 		prevPoint = clickPoint;
+		try {
+			if (makerbot != null)
+				makerbot.execute(code);
+		} catch (MakerbotException e) {
+			log.error("click():" + e);
+		}		
+	}
+	
+	
+	public void dragDrop(ScreenLocation from, ScreenLocation to) {		
+		int x = 800 - (800 *from.getX() / 1280);
+		int y = 600 * from.getY() / 800;
+
+		
+		int x1 = 800 - (800 *to.getX() / 1280);
+		int y1 = 600 * to.getY() / 800;
+		
+		log.info("execute dragDrop from ({},{})", x, y);
+		log.info("execute dragDrop to ({},{})", x1, y1);
+		
+		Point clickPoint = new Point(x,y);
+		Point dragPoint = new Point(x1,y1);
+		Vector<String> code = generator.createClickVector(clickPoint, prevPoint, dragPoint);
+		prevPoint = dragPoint;
 		try {
 			if (makerbot != null)
 				makerbot.execute(code);

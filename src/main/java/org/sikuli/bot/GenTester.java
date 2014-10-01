@@ -23,7 +23,7 @@ public class GenTester {
 		Point prevPoint = null;
 		for (int x = 0; x < 200; x = x + 50){
 			Point currPoint = new Point(x,x);		
-			code = generator.createClickVector(currPoint, prevPoint);
+			code = generator.createClickVector(currPoint, prevPoint, null);
 			prevPoint = currPoint;
 			makerbot.execute(code);	
 		}

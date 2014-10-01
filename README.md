@@ -57,4 +57,17 @@ If successful, the content of the screen should be saved in screen.png. Open it 
 # Connect to a Makerbot Replicator II
 
 
+# Troubleshooting
+
+If you get an error that reads like
+
+	/dev/tty.usbmodem1421' already in use error
+
+Run these to resolve the issue
+
+	sudo mkdir /var/lock
+	sudo chmod a+rw /var/lock
+
+This is based on [this tip](http://stackoverflow.com/questions/12866572/rxtx-on-mac-serial-port-already-in-use) on Stackoverflow.
+
 

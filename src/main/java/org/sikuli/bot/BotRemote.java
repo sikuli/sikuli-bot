@@ -113,6 +113,9 @@ public class BotRemote extends JFrame {
 					Point from = dragOrigin;
 					Point to = e.getPoint();
 					log.info("mouseListener: dragged from " + from + " to " + to);
+					ScreenLocation locFrom = new DefaultScreenLocation(screen, from.x, from.y);
+					ScreenLocation locTo = new DefaultScreenLocation(screen, to.x, to.y);
+					mouse.dragDrop(locFrom,locTo);
 					dragOrigin = null;
 				}
 				// TODO: call Makerbot to execute swipe				
