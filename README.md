@@ -3,7 +3,9 @@ sikuli-bot
 
 # Build
 
-	mvn package
+For MacOSX
+
+	mvn package -Dplatform.dependency=macosx-x86_64
 
 # Run
 

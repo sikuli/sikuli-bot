@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
 
 import org.sikuli.api.Screen;
 
-class AndroidScreen implements Screen {
+public class AndroidScreen implements Screen {
 	
 		private BufferedImage black;
 		private BufferedImage image;

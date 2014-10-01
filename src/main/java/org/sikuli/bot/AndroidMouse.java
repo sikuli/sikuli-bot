@@ -6,7 +6,7 @@ import java.util.Vector;
 import org.sikuli.api.ScreenLocation;
 import org.sikuli.api.robot.Mouse;
 
-class AndroidMouse implements Mouse {
+public class AndroidMouse implements Mouse {
 	
 	private Makerbot makerbot;
 	private GCodeGeneratorII generator;

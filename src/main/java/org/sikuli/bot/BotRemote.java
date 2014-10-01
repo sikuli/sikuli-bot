@@ -25,7 +25,7 @@ public class BotRemote extends JFrame {
 	private Makerbot bot;
 
 	public BotRemote() {
-		setTitle("ImageViewer");
+		setTitle("Sikuli Bot - Remote");
 		setSize(1280, 800+60);
 		label = new JLabel();
 		Container contentPane = getContentPane();

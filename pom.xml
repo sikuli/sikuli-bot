@@ -27,10 +27,6 @@
 	<url>http://lab.sikuli.org</url>
 	<version>0.8.0</version>
 	<packaging>jar</packaging>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<platform.dependency>macosx-x86_64</platform.dependency>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.sikuli</groupId>
@@ -66,6 +62,19 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<repositories>
+	<repository>
+		<id>Nexus Snapshots</id>
+		<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		<releases>
+			<enabled>false</enabled>
+		</releases>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</repository>
+</repositories>
 	<build>
 		<plugins>
 			<plugin>
@@ -86,7 +95,7 @@
 							<transformers>
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>org.sikuli.slides.apps.Main</mainClass>
+									<mainClass>org.sikuli.bot.BotRemote</mainClass>
 								</transformer>
 							</transformers>
 							<artifactSet>
@@ -107,10 +116,6 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jar-plugin</artifactId> 
-				<inherited>true</inherited> <configuration> <archive> <manifest> <addDefaultImplementationEntries>true</addDefaultImplementationEntries> 
-				<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries> </manifest> 
-				</archive> </configuration> </plugin> -->
 		</plugins>
 	</build>
 </project>

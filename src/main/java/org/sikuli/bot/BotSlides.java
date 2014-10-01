@@ -21,10 +21,17 @@ public class BotSlides {
     	final Context context = new AndroidContext(bot);    
     	final SlideShowViewer viewer = new SlideShowViewer();
     	viewer.setContext(context);
+    	viewer.setLocationRelativeTo(null);
 		viewer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		viewer.setVisible(true);		
+		viewer.setVisible(true);	
+		viewer.setTitle("Sikuli Bot + Slides");
 		
-		viewer.invokeOpen(new File("home.pptx"));
+		String input;
+		if (args.length >= 1){
+			input = args[0];
+			viewer.invokeOpen(new File(input));
+		}			
+		
 		viewer.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent we) {
