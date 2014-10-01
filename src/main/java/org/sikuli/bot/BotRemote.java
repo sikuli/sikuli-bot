@@ -133,6 +133,7 @@ public class BotRemote extends JFrame {
 	public static void main(String[] args) {		
 		final BotRemote frame = new BotRemote();
 		frame.setVisible(true);
+		frame.setLocationRelativeTo(null);
 	}
 
 	protected void setImage(BufferedImage screenshot) {
