@@ -1,10 +1,12 @@
 package org.sikuli.bot;
 import java.awt.BorderLayout;
 import java.awt.Container;
+import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
@@ -18,11 +20,19 @@ import javax.swing.JMenuItem;
 import org.sikuli.api.DefaultScreenLocation;
 import org.sikuli.api.Screen;
 import org.sikuli.api.ScreenLocation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class BotRemote extends JFrame {
 	private AndroidMouse mouse;
 	private AndroidScreen screen;	
 	private Makerbot bot;
+	
+	private Point dragOrigin;
+	
+	boolean dragging = false;
+	
+	Logger log = LoggerFactory.getLogger(BotRemote.class);
 
 	public BotRemote() {
 		setTitle("Sikuli Bot - Remote");
@@ -35,56 +45,47 @@ public class BotRemote extends JFrame {
 		String name = "screen.png";
 		label.setIcon(new ImageIcon(name));
 		
-		
-//		JButton button = new JButton("Home");
-//		button.addActionListener(new ActionListener(){
-//
-//			@Override
-//			public void actionPerformed(ActionEvent arg0) {
-//				int x = 1280/2;
-//				int y = 800 + 80;
-//				ScreenLocation loc = new DefaultScreenLocation(screen, x, y);
-//				mouse.click(loc);
-//			}
-//		});
-		
-		
 		JLabel buttons = new JLabel(new ImageIcon(getClass().getResource("/buttons.png")));
-		
-//		JButton back = new JButton("Back");
-//		back.addActionListener(new ActionListener(){
-//
-//			@Override
-//			public void actionPerformed(ActionEvent arg0) {
-//				int x = 1280/2 + 150;
-//				int y = 800 + 80;
-//				ScreenLocation loc = new DefaultScreenLocation(screen, x, y);
-//				mouse.click(loc);
-//			}
-//		});
-		
-		
 		contentPane.add(label, BorderLayout.CENTER);
 		contentPane.add(buttons, BorderLayout.PAGE_END);
 
 
 		bot = new Makerbot();		
 		try{
-//			bot.disconnect();
 			bot.connect();
 		}catch(IllegalStateException e){
-			System.out.println(e);
-			System.out.println("Makerbot is not connected.");
+			log.error("bot.connect:" +e);
+			log.error("Makerbot is not connected.");			
 			bot = null;
 		}
 		
 		mouse = new AndroidMouse(bot);
 		screen = new AndroidScreen();
+		
+		
+		
+		addMouseMotionListener(new MouseMotionListener(){
 
-		addMouseListener(new MouseAdapter(){
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				log.trace("mouseDragged: " + e);
+				if (!dragging){
+					dragOrigin = e.getPoint();
+				}
+				dragging = true;
+			}
+
+			@Override
+			public void mouseMoved(MouseEvent e) {
+				log.trace("mouseMoved: " + e);				
+			}
+		});
+
+		addMouseListener(new MouseAdapter(){			
+			
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				System.out.println("click: (" + e.getX() + "," + e.getY() + ")");
+				log.info("mouseListener: clicked (" + e.getX() + "," + e.getY() + ")");
 				
 				if (e.getY() > 820){					
 					int x = 1280/2;
@@ -102,7 +103,22 @@ public class BotRemote extends JFrame {
 					ScreenLocation loc = new DefaultScreenLocation(screen, e.getX(), e.getY());
 					mouse.click(loc);
 				}
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				log.trace("mouseReleased: " + e);
+				dragging = false;
+				if (dragOrigin != null){		
+					Point from = dragOrigin;
+					Point to = e.getPoint();
+					log.info("mouseListener: dragged from " + from + " to " + to);
+					dragOrigin = null;
+				}
+				// TODO: call Makerbot to execute swipe				
 			}			
+			
+			 
 		});
 		
 		addWindowListener(new WindowAdapter() {
@@ -127,6 +143,7 @@ public class BotRemote extends JFrame {
 				}
 			}			
 		};
+		t.setName("capture");
 		t.start();
 	}
 

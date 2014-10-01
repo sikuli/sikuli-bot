@@ -5,8 +5,12 @@ import java.util.Vector;
 
 import org.sikuli.api.ScreenLocation;
 import org.sikuli.api.robot.Mouse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class AndroidMouse implements Mouse {
+	
+	Logger log = LoggerFactory.getLogger(AndroidMouse.class);
 	
 	private Makerbot makerbot;
 	private GCodeGeneratorII generator;
@@ -37,7 +41,9 @@ public class AndroidMouse implements Mouse {
 	public void click(ScreenLocation screenLoc) {		
 		int x = 800 - (800 *screenLoc.getX() / 1280);
 		int y = 600 * screenLoc.getY() / 800;
-		System.out.println("try to click at (" + x + "," + y + ")");
+		
+		log.info("execute click at ({},{})", x, y);
+		
 		Point clickPoint = new Point(x,y);		
 		Vector<String> code = generator.createClickVector(clickPoint, prevPoint);
 		prevPoint = clickPoint;
@@ -45,7 +51,7 @@ public class AndroidMouse implements Mouse {
 			if (makerbot != null)
 				makerbot.execute(code);
 		} catch (MakerbotException e) {
-			e.printStackTrace();
+			log.error("click():" + e);
 		}		
 	}
 

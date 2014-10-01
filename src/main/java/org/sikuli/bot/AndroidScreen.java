@@ -10,8 +10,11 @@ import java.io.InputStreamReader;
 import javax.imageio.ImageIO;
 
 import org.sikuli.api.Screen;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class AndroidScreen implements Screen {
+	Logger log = LoggerFactory.getLogger(AndroidScreen.class);
 	
 		private BufferedImage black;
 		private BufferedImage image;
@@ -45,7 +48,7 @@ public class AndroidScreen implements Screen {
 		}
 
 		private void executeAdbCommandScreenGrab(){
-			System.out.println("capturing a screenshot");		
+			log.info("capturing a screenshot, saving it to {}", screenshotFileName);		
 			String adb = "/adt/sdk/platform-tools/adb";
 			String s = null;
 			try {
@@ -59,6 +62,8 @@ public class AndroidScreen implements Screen {
 						"-c",
 						cmd
 				};
+				
+				
 
 				Process p = Runtime.getRuntime().exec(cmds);
 
@@ -72,8 +77,8 @@ public class AndroidScreen implements Screen {
 				}
 				// read any errors from the attempted command
 				while ((s = stdError.readLine()) != null) {
-					System.out.println("capturing failed");
-					System.out.println(s);
+					log.error("capturing failed");
+					log.error(s);
 				}
 			}
 			catch (IOException e) {
