@@ -6,14 +6,11 @@ import org.sikuli.slides.api.Context;
 
 public class AndroidContext extends Context {
 
-	private Makerbot makerbot;
-		
-
 	public AndroidContext(Makerbot makerbot){
-		super(new DefaultScreenRegion(new AndroidScreen()));
-		this.makerbot = makerbot;
+		super(new DefaultScreenRegion(new AndroidScreen()));		
 		setMouse(new AndroidMouse(makerbot));
 		setExecutionListener(null);
+		setMinScore(0.85f);
 		try{
 			makerbot.connect();
 		}catch(IllegalStateException e){
