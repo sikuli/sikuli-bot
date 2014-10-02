@@ -63,11 +63,27 @@ If you get an error that reads like
 
 	/dev/tty.usbmodem1421' already in use error
 
-Run these to resolve the issue
+First, run these to resolve the issue
 
 	sudo mkdir /var/lock
 	sudo chmod a+rw /var/lock
 
+If the above step does not work, the port is greped by the MakerWare software.
+so Run the following command to free the USB port in use
+
+	sudo launchctl unload /Library/LaunchDaemons/com.makerbot.conveyor.plist
+
 This is based on [this tip](http://stackoverflow.com/questions/12866572/rxtx-on-mac-serial-port-already-in-use) on Stackoverflow.
+
+
+If your laptop does not find any devices or unable to connect to the device with USB cable like
+	
+	error: device not found
+	unable to connect: <your IP address>:5555
+
+Kill adb service server and retry to connect
+
+	adb kill-server
+	adb connect 192.168.1.105
 
 
