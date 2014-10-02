@@ -93,7 +93,7 @@ public class GCodeGeneratorII {
 //		vect.add("G1 Z-" + (ZBOTTOM - 30 - width) + " F2300"); //adjust to right height
 //
 		vect.add("G1 X-" + ((int) clickPt.getX()) + " Y-" +
-                ((int) clickPt.getY()) + " F2300"); //Move to pt
+                ((int) clickPt.getY()) + " F3000"); //Move to pt
 //		
 //		vect.add("G162 X Y F2500");
 
