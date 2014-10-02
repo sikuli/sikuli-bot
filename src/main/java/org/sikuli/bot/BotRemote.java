@@ -10,6 +10,7 @@ import java.awt.event.MouseMotionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
+import java.util.List;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -23,12 +24,15 @@ import org.sikuli.api.ScreenLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.common.collect.Lists;
+
 public class BotRemote extends JFrame {
 	private AndroidMouse mouse;
 	private AndroidScreen screen;	
 	private Makerbot bot;
 	
 	private Point dragOrigin;
+	private List<Point> points = Lists.newArrayList();
 	
 	boolean dragging = false;
 	
@@ -71,6 +75,9 @@ public class BotRemote extends JFrame {
 				log.trace("mouseDragged: " + e);
 				if (!dragging){
 					dragOrigin = e.getPoint();
+					points.clear();					
+				}else{
+					points.add(e.getPoint());
 				}
 				dragging = true;
 			}
@@ -115,7 +122,8 @@ public class BotRemote extends JFrame {
 					log.info("mouseListener: dragged from " + from + " to " + to);
 					ScreenLocation locFrom = new DefaultScreenLocation(screen, from.x, from.y);
 					ScreenLocation locTo = new DefaultScreenLocation(screen, to.x, to.y);
-					mouse.dragDrop(locFrom,locTo);
+//					mouse.dragDrop(locFrom,locTo);
+					mouse.dragDrop(locFrom,points);
 					dragOrigin = null;
 				}
 				// TODO: call Makerbot to execute swipe				

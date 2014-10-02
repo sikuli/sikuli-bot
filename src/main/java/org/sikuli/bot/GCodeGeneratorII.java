@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 import java.util.Vector;
 
 public class GCodeGeneratorII {
@@ -104,6 +105,100 @@ public class GCodeGeneratorII {
 		
 		return vect;
 	}
+	
+	public Vector<String> createClickVector(Point clickPt, Point prevPt, List<Point> points){
+		//Calculate the new coordinate
+		clickPt = findCoord(clickPt);
+		prevPt = findCoord(prevPt);
+		Vector<String> vect = new Vector<String>();
+		//Write to vector
+			
+		//Set Up stuff
+		vect.add("M73 P2");
+        vect.add("M103");
+        vect.add("M73 P5");
+        vect.add("M73 P0");
+		vect.add("G21");
+        vect.add("G90");
+        
+        if (prevPt == null){
+        	vect.add("G162 X Y F2500");
+        	vect.add("G92 X" + ((int)origin.getX() + STYLUS_X_OFFSET) + 
+    				" Y" + ((int)origin.getY() + STYLUS_Y_OFFSET) + " Z0");
+        }else{
+    		vect.add("G92 X-" + prevPt.getX() + 
+     				" Y-" + prevPt.getY() + " Z0");
+        }
+		
+		//Moving
+//		vect.add("G1 Z-" + (ZBOTTOM - 30 - width) + " F2300"); //adjust to right height
+//
+		vect.add("G1 X-" + ((int) clickPt.getX()) + " Y-" +
+                ((int) clickPt.getY()) + " F3000"); //Move to pt
+//		
+//		vect.add("G162 X Y F2500");
+
+//		vect.add("G1 Z-" + (ZBOTTOM - width - 1)); //Click
+		vect.add("G1 Z-22");//\" + (ZBOTTOM - 30 - width));
+		
+		for (Point p : points){
+			p = findCoord(p);
+			vect.add("G1 X-" + ((int) p.getX()) + " Y-" +
+	                ((int) p.getY()) + " F3000"); //Move to pt
+		}
+		
+	
+		
+		vect.add("G1 Z0");
+//		vect.add("G1 X0 Y0 Z0"); //Return home
+		// vect.add("M72 P1"); //Done music 
+		
+		return vect;
+	}	
+	
+	public Vector<String> createClickVector(Point clickPt, Point prevPt){
+		//Calculate the new coordinate
+		clickPt = findCoord(clickPt);
+		prevPt = findCoord(prevPt);
+		Vector<String> vect = new Vector<String>();
+		//Write to vector
+			
+		//Set Up stuff
+		vect.add("M73 P2");
+        vect.add("M103");
+        vect.add("M73 P5");
+        vect.add("M73 P0");
+		vect.add("G21");
+        vect.add("G90");
+        
+        if (prevPt == null){
+        	vect.add("G162 X Y F2500");
+        	vect.add("G92 X" + ((int)origin.getX() + STYLUS_X_OFFSET) + 
+    				" Y" + ((int)origin.getY() + STYLUS_Y_OFFSET) + " Z0");
+        }else{
+    		vect.add("G92 X-" + prevPt.getX() + 
+     				" Y-" + prevPt.getY() + " Z0");
+        }
+		
+		//Moving
+//		vect.add("G1 Z-" + (ZBOTTOM - 30 - width) + " F2300"); //adjust to right height
+//
+		vect.add("G1 X-" + ((int) clickPt.getX()) + " Y-" +
+                ((int) clickPt.getY()) + " F3000"); //Move to pt
+//		
+//		vect.add("G162 X Y F2500");
+
+//		vect.add("G1 Z-" + (ZBOTTOM - width - 1)); //Click
+		vect.add("G1 Z-22");//\" + (ZBOTTOM - 30 - width));
+				
+		
+		vect.add("G1 Z0");
+//		vect.add("G1 X0 Y0 Z0"); //Return home
+		// vect.add("M72 P1"); //Done music 
+		
+		return vect;
+	}
+	
 		
 	public Vector<String> createClickVector(Point clickPt, Point prevPt, Point dragPt){
 		//Calculate the new coordinate

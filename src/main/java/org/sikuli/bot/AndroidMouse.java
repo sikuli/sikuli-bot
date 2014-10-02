@@ -1,6 +1,7 @@
 package org.sikuli.bot;
 
 import java.awt.Point;
+import java.util.List;
 import java.util.Vector;
 
 import org.sikuli.api.ScreenLocation;
@@ -47,7 +48,7 @@ public class AndroidMouse implements Mouse {
 		log.info("execute click at ({},{})", x, y);
 		
 		Point clickPoint = new Point(x,y);		
-		Vector<String> code = generator.createClickVector(clickPoint, prevPoint, null);
+		Vector<String> code = generator.createClickVector(clickPoint, prevPoint);
 		prevPoint = clickPoint;
 		try {
 			if (makerbot != null)
@@ -57,6 +58,28 @@ public class AndroidMouse implements Mouse {
 		}		
 	}
 	
+	
+	public void dragDrop(ScreenLocation from, List<Point> points){		
+		int x = 800 - (800 *from.getX() / 1280);
+		int y = 600 * from.getY() / 800;
+		
+		for (Point p : points){
+			p.x = ((int)(800 - (800 *p.getX() / 1280)));
+			p.y = ((int)(600 * p.getY() / 800));
+		}
+		
+		log.info("execute dragDrop from ({},{})", x, y);
+		
+		Point clickPoint = new Point(x,y);
+		Vector<String> code = generator.createClickVector(clickPoint, prevPoint, points);
+		prevPoint = points.get(points.size()-1);
+		try {
+			if (makerbot != null)
+				makerbot.execute(code);
+		} catch (MakerbotException e) {
+			log.error("click():" + e);
+		}		
+	}
 	
 	public void dragDrop(ScreenLocation from, ScreenLocation to) {		
 		int x = 800 - (800 *from.getX() / 1280);
